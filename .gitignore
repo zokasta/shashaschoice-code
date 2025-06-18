@@ -1,0 +1,10 @@
+# Ignore uploads/media
+wp-content/uploads/
+wp-content/cache/
+*.log
+*.sql
+*.zip
+node_modules/
+.env
+
+wp-content/uploads/
