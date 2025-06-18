@@ -1,10 +1,35 @@
-# Ignore uploads/media
-wp-content/uploads/
-wp-content/cache/
-*.log
-*.sql
-*.zip
-node_modules/
-.env
+# Ignore everything
+*
 
+# But not these files/folders
+!.gitignore
+!wp-config.php
+!index.php
+!wp-content/
+!wp-includes/
+!wp-admin/
+!readme.html
+!license.txt
+!xmlrpc.php
+!wp-activate.php
+!wp-blog-header.php
+!wp-comments-post.php
+!wp-cron.php
+!wp-links-opml.php
+!wp-load.php
+!wp-login.php
+!wp-mail.php
+!wp-settings.php
+!wp-signup.php
+!wp-trackback.php
+
+# Inside wp-content, ignore everything...
+wp-content/*
+
+# ...except plugins and themes (not uploads)
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore media
 wp-content/uploads/
+
