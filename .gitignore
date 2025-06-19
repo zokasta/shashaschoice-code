@@ -8,6 +8,8 @@
 # Allow WordPress root files
 !*.php
 !*.html
+!*.css
+!*.js
 !*.txt
 !.htaccess
 !.gitignore
