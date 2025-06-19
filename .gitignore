@@ -1,34 +1,26 @@
 # Ignore all files
 *
 
-# But allow core WordPress files
-!.gitignore
-!wp-activate.php
-!wp-blog-header.php
-!wp-comments-post.php
-!wp-config.php
-!wp-cron.php
-!wp-links-opml.php
-!wp-load.php
-!wp-login.php
-!wp-mail.php
-!wp-settings.php
-!wp-signup.php
-!wp-trackback.php
-!index.php
-!license.txt
-!readme.html
-!xmlrpc.php
+# But allow core WordPres
+# Ignore everything
+*
 
-# Allow directories
+# Allow WordPress root files
+!*.php
+!*.html
+!*.txt
+!.htaccess
+!.gitignore
+
+# Allow these folders
 !wp-admin/
 !wp-includes/
 !wp-content/
 
-# Inside wp-content, ignore everything by default
+# Ignore everything in wp-content
 !wp-content/*
 
-# But allow themes and plugins
+# Allow only themes and plugins in wp-content
 !wp-content/themes/
 !wp-content/plugins/
 
