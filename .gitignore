@@ -24,7 +24,7 @@
 !wp-trackback.php
 
 # Inside wp-content, ignore everything...
-wp-content/*
+!wp-content/*
 
 # ...except plugins and themes (not uploads)
 !wp-content/plugins/
