@@ -1,32 +1,28 @@
-# Ignore all files
+# Ignore everything by default
 *
 
-# But allow core WordPres
-# Ignore everything
-*
-
-# Allow WordPress root files
-!*.php
-!*.html
-!*.css
-!*.js
-!*.txt
-!.htaccess
-!.gitignore
-
-# Allow these folders
+# Allow these core WordPress directories
 !wp-admin/
 !wp-includes/
 !wp-content/
 
-# Ignore everything in wp-content
-!wp-content/*
+# Allow root files
+!*.php
+!*.html
+!*.txt
+!.htaccess
+!.gitignore
 
-# Allow only themes and plugins in wp-content
+# In wp-admin, allow everything
+!wp-admin/**
+!wp-includes/**
+
+# In wp-content, allow themes and plugins only
+wp-content/*
 !wp-content/themes/
 !wp-content/plugins/
 
-# Specifically ignore uploads and cache folders
+# Still ignore media and cache folders
 wp-content/uploads/
 wp-content/cache/
 
