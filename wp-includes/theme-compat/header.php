@@ -19,6 +19,8 @@ _deprecated_file(
 <html <?php language_attributes(); ?>>
 <head>
 <link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="preload" as="image" href="https://shashaschoice.com/wp-content/uploads/2025/06/banner.jpg">
+
 <meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
 
 <title><?php echo wp_get_document_title(); ?></title>
