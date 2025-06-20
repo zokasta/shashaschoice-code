@@ -18,9 +18,9 @@
 !wp-includes/**
 
 # In wp-content, allow themes and plugins only
-wp-content/*
-!wp-content/themes/
-!wp-content/plugins/
+wp-content/**
+# !wp-content/themes/
+# !wp-content/plugins/
 
 # Still ignore media and cache folders
 wp-content/uploads/
