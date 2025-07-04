@@ -1,0 +1,168 @@
+.goldsmith-empty,
+.goldsmith-terms + select:not(.goldsmith-select),
+.goldsmith-term.goldsmith-disabled:after,
+.goldsmith-term.goldsmith-disabled:before {
+    display: none !important;
+}
+
+.goldsmith-term.goldsmith-disabled {
+    opacity: .4;
+    cursor: default;
+}
+
+.goldsmith-terms {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.goldsmith-term {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.goldsmith-type-color .goldsmith-term,
+.goldsmith-product .goldsmith-term {
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    border-color:  1px solid var(--goldsmith-gray);
+}
+
+.goldsmith-term.goldsmith-selected:before {
+    content: '✓';
+    min-height: 18px;
+    min-width: 18px;
+    border-radius: 100%;
+    background-color: var(--goldsmith-success);
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goldsmith-type-image .goldsmith-term {
+    height: 42px;
+    width: 42px;
+}
+
+.goldsmith-type-image .goldsmith-term img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.goldsmith-type-button .type-button {
+    font-size: 12px;
+    line-height: 1;
+    min-width: 40px;
+    padding: 3px 6px;
+    color: var(--goldsmith-light);
+    background: var(--goldsmith-dark);
+}
+
+.reset_variations.goldsmith-btn-reset {
+    background: var(--goldsmith-dark);
+    color: #fff;
+    padding: 0px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    min-height: 25px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+}
+
+.goldsmith-loop-product .reset_variations.goldsmith-btn-reset {
+    min-height: 20px;
+}
+
+.goldsmith-product.row .goldsmith-variations-items .label {
+    margin-right: 10px;
+}
+
+.goldsmith-terms .term-hint {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;
+    bottom: 100%;
+    background: var(--goldsmith-dark);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.goldsmith-term:hover .term-hint {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: .1s;
+    -moz-transition-delay: .1s;
+    transition-delay: .1s;
+    bottom: calc(100% + 10px);
+}
+
+.goldsmith-terms .term-hint:before {
+    content: '';
+    border: 5px solid transparent;
+    border-top-color: var(--goldsmith-dark);
+    position: absolute;
+    bottom: -10px;
+}
+
+.outline-1 .goldsmith-term {
+    padding: 3px;
+    border: 1px solid var(--goldsmith-dark);
+}
+
+.outline-1 .type-color > span {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+}
+.goldsmith-type-button.outline-1 .type-button {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.terms-shape-circle .type-color > span {
+    border-radius: 100%;
+}
+.terms-shape-square .goldsmith-term,
+.terms-shape-square .type-color > span {
+    border-radius: 0;
+}
+.terms-shape-radius .goldsmith-term,
+.terms-shape-radius .type-color > span {
+    border-radius: 3px;
+}
+
+.outline-1 .goldsmith-selected {
+    border-color: #25d366;
+    border-width: 2px;
+}

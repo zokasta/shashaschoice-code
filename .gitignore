@@ -1,33 +1,30 @@
 # Ignore everything by default
 *
 
-# Allow these core WordPress directories
-!wp-admin/
-!wp-includes/
-!wp-content/
-
-# Allow root files
+# Allow essential root files
+!.htaccess
 !*.php
 !*.html
 !*.txt
-!.htaccess
 !.gitignore
 
-# In wp-admin, allow everything
+# Allow wp-admin and wp-includes completely
+!wp-admin/
 !wp-admin/**
+!wp-includes/
 !wp-includes/**
 
-# In wp-content, allow themes and plugins only
-wp-content/**
+# Allow wp-content
+!wp-content/
+
+# Allow everything in wp-content/themes
 !wp-content/themes/
 !wp-content/themes/**
+
+# Allow everything in wp-content/plugins
 !wp-content/plugins/
 !wp-content/plugins/**
-
-
-wp-content/plugins/**
 
 # Still ignore media and cache folders
 wp-content/uploads/
 wp-content/cache/
-

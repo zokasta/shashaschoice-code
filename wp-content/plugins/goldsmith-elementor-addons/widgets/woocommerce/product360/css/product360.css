@@ -1,0 +1,143 @@
+.goldsmith-product360-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    z-index: 99;
+}
+
+.goldsmith-product360-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0 0 5px rgb(0 0 0 / 8%);
+    color: var(--goldsmith-black);
+    font-size: 13px;
+	text-decoration: none;
+}
+.goldsmith-product360-btn a:hover {
+    padding-left: 15px;
+}
+.goldsmith-product360-btn span {
+    overflow: hidden;
+    padding: 0;
+    max-width: 0;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: padding 0.4s cubic-bezier(.175,.885,.32,1.15),max-width 0.4s cubic-bezier(.175,.885,.32,1.15);
+}
+
+.goldsmith-product360-btn a:hover span {
+    padding-right: 25px;
+    max-width: 280px;
+    padding-left: 15px;
+}
+
+.goldsmith-360-view {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	cursor: ew-resize;
+	cursor: -webkit-grab;
+}
+.goldsmith-360-view:active {
+	cursor: ew-resize;
+	cursor: -webkit-grabbing;
+}
+.goldsmith-360-view .goldsmith-360-title {
+	position: relative;
+	z-index: 40;
+	padding-top: 20px;
+	text-align: center;
+}
+.goldsmith-360-view .goldsmith-360-view-images {
+	display: none;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	perspective: 800px;
+	-webkit-perspective: 800px;
+	list-style: none;
+}
+.goldsmith-360-view .goldsmith-360-view-images img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: auto;
+	transform: translateX(-50%);
+}
+.goldsmith-360-view .goldsmith-360-view-images img.previous-image {
+	visibility: hidden;
+}
+.goldsmith-360-view .goldsmith-360-view-images img.current-image {
+	visibility: visible;
+}
+.goldsmith-360-view .spinner {
+	display: block;
+	margin: 0 auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	color: #000;
+	text-align: center;
+	font-weight: bolder;
+	line-height: 60px;
+}
+.goldsmith-360-view .spinner span {
+	line-height: 60px;
+}
+.goldsmith-360-view .nav_bar {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	z-index: 11;
+	margin-left: -42px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.goldsmith-360-view .nav_bar a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+    color: var(--goldsmith-black);
+	text-decoration: none;
+	font-size: 0;
+}
+
+.goldsmith-360-view .nav_bar a.nav_bar_play,
+.goldsmith-360-view .nav_bar a.nav_bar_stop {
+	display: none;
+}
+
+.goldsmith-360-view .nav_bar a.nav_bar_previous:after,
+.goldsmith-360-view .nav_bar a.nav_bar_next:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-size: 18px;
+}
+.goldsmith-360-view .nav_bar a.nav_bar_next:after {
+    content: "\f30b";
+}
+.goldsmith-360-view .nav_bar a.nav_bar_previous:after {
+    content: "\f30a";
+}
+
+
+
