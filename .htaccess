@@ -18,10 +18,6 @@ RewriteCond %{HTTP_USER_AGENT} Mobile|Android|Silk/|Kindle|BlackBerry|Opera\ Min
 RewriteRule .* - [E=Cache-Control:vary=%{ENV:LSCACHE_VARY_VALUE}+ismobile]
 ### marker MOBILE end ###
 
-### marker CACHE RESOURCE start ###
-RewriteRule wp-content/.*/[^/]*(responsive|css|js|dynamic|loader|fonts)\.php - [E=cache-control:max-age=3600]
-### marker CACHE RESOURCE end ###
-
 ### marker WEBP start ###
 RewriteCond %{HTTP_ACCEPT} "image/webp"
 RewriteRule .* - [E=Cache-Control:vary=%{ENV:LSCACHE_VARY_VALUE}+webp]

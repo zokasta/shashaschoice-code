@@ -37,4 +37,23 @@ _deprecated_file(
 
 		<?php wp_footer(); ?>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all <a> elements on the page
+    const anchorTags = document.querySelectorAll("a");
+
+    anchorTags.forEach(anchor => {
+      // Check if the <a> tag has no href attribute
+      if (!anchor.hasAttribute("href") || anchor.getAttribute("href").trim() === "") {
+        // Create a <p> element
+        const p = document.createElement("p");
+        p.innerHTML = anchor.innerHTML;
+
+        // Replace <a> with <p>
+        anchor.parentNode.replaceChild(p, anchor);
+      }
+    });
+  });
+</script>
+
 </html>
