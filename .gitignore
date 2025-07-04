@@ -19,6 +19,7 @@
 
 # In wp-content, allow themes and plugins only
 wp-content/**
+!wp-content/themes/
 !wp-content/themes/**
 !wp-content/plugins/**
 

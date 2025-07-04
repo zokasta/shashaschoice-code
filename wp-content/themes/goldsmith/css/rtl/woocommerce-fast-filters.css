@@ -1,0 +1,127 @@
+/* Shop Top fast Filters */
+
+.goldsmith-shop-fast-filters {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    align-content: center;
+}
+.fast-filters-label {
+    min-width: 95px;
+}
+.goldsmith-fast-filters-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -2px;
+    margin-left: 2px;
+}
+.goldsmith-fast-filters-list li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 2px;
+    line-height: 1;
+    position: relative;
+}
+.goldsmith-fast-filters-list li svg {
+    margin-left: 10px;
+    max-width: 17px;
+    max-height: 17px;
+}
+.goldsmith-fast-filters-list li a {
+    padding: 5px 20px;
+    border: 1px solid var(--goldsmith-border);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    min-height: 35px;
+}
+.goldsmith-fast-filters-list:not(.has-filter) .remove-fast-filter a {
+    display: none;
+}
+.goldsmith-fast-filters-list .remove-fast-filter.active a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goldsmith-fast-filters-list li:not(:last-child) {
+    margin-left: 10px;
+}
+.goldsmith-fast-filters-list li:hover> a,
+.goldsmith-fast-filters-list .remove-fast-filter.active > a {
+    color:var(--goldsmith-light);
+    background-color:var(--goldsmith-dark);
+    border-color:var(--goldsmith-dark);
+}
+.goldsmith-fast-filters-list.has-filter li:not(.active) {
+    display: none;
+}
+.goldsmith-fast-filters-list.has-filter li.show-always {
+    display: inline-flex;
+}
+.goldsmith-fast-filters-list.has-filter.filters-first,
+.show-always-stock-sale .goldsmith-fast-filters-list.filters-first {
+    margin-left: 20px;
+}
+
+.goldsmith-shop-fast-filters .goldsmith-fast-filters-list li.show-always,
+.goldsmith-shop-fast-filters .goldsmith-fast-filters-list.has-filter li.show-after-filter,
+.goldsmith-fast-filters-list.has-filter ul.goldsmith-fast-filters-submenu li,
+.goldsmith-fast-filters-list.has-filter li.fast-filters-label {
+    display: inline-flex;
+}
+
+.goldsmith-fast-filters-list.has-filter li:not(.remove-fast-filter).active > a,
+.goldsmith-fast-filters-list.has-filter li.active .goldsmith-fast-filters-submenu li.active > a {
+    color:var(--goldsmith-warning);
+    background-color:var(--goldsmith-warning-bg);
+    border-color:var(--goldsmith-warning-border);
+}
+.goldsmith-fast-filters-list li:not(.remove-fast-filter) .remove-filter {
+    background-color: var(--goldsmith-warning-bg);
+}
+.goldsmith-fast-filters-list li:not(.remove-fast-filter) .remove-filter:before,
+.goldsmith-fast-filters-list li:not(.remove-fast-filter) .remove-filter:after {
+    background-color: var(--goldsmith-warning) !important;
+}
+.goldsmith-fast-filters-submenu {
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    min-width: max-content;
+    top: 100%;
+    right: 0;
+    background: var(--goldsmith-light);
+    border: 1px solid var(--goldsmith-border);
+    border-radius: var(--goldsmith-border-radius);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+    z-index: 1;
+}
+.goldsmith-has-submenu:hover > .goldsmith-fast-filters-submenu {
+    opacity: 1;
+    display: inline-flex;
+    visibility: visible;
+}
+.goldsmith-fast-filters-list .goldsmith-fast-filters-submenu li {
+    margin: 0;
+}
+.goldsmith-fast-filters-list .goldsmith-fast-filters-submenu li:not(:last-child) {
+    margin-bottom: 5px;
+}
+/* Shop Top fast Filters */

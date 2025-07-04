@@ -1,0 +1,447 @@
+/* * WooCommerce fixs * This file contain WooCommerce codes for some problems */
+ul.woocommerce-error {
+	margin: 10px 0;
+	list-style: none;
+}
+.archive.search.search-no-results .goldsmith-before-loop.goldsmith-shop-filter-top-area {
+    display: none;
+}
+.archive.search.search-no-results  .goldsmith-products-wrapper .goldsmith-products.row {
+    margin: 0;
+}
+.archive.search.search-no-results .goldsmith-not-found-info-wrapper {
+    margin-top: 0;
+}
+
+.goldsmith-products.row {
+	margin-bottom: -30px;
+}
+
+.goldsmith-not-found-info-wrapper {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.goldsmith-page-hero-content .term-description {
+    max-width: 440px;
+    margin-top: 15px;
+}
+
+/* price */
+.woocommerce div.product p.price,
+.woocommerce div.product span.price,
+.woocommerce-variation-price .price,
+.goldsmith-price {
+    color: var(--goldsmith-gray-dark);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.woocommerce-variation-price .price span.del>span,
+.goldsmith-price span.del>span {
+	text-decoration: line-through;
+	color: var(--goldsmith-dark-soft);
+}
+
+.goldsmith-secondary-color {
+    margin-right: 5px;
+}
+/* price */
+
+
+/* shop buttons  */
+.woocommerce-page #respond input#submit,
+.woocommerce-page button.button,
+.woocommerce-page a.button,
+.woocommerce .button,
+.woocommerce #respond input#submit,
+.woocommerce button.button,
+.woocommerce a.button,
+.woocommerce .button {
+	font-size: 14px;
+	font-weight: 400;
+	background-color: var(--goldsmith-dark);
+	color: var(--goldsmith-light);
+	padding: 0px 15px;
+	min-height: 38px;
+	min-width: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: normal;
+	letter-spacing: 0.3px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+	background-image: none;
+	outline: none;
+	border: 0;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	white-space: nowrap;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+.woocommerce-page #respond input#submit:hover,
+.woocommerce-page button.button:hover,
+.woocommerce-page a.button:hover,
+.woocommerce .button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce button.button:hover,
+.woocommerce a.button:hover,
+.woocommerce .button:hover {
+	opacity: 0.8;
+}
+
+.nt-goldsmith-content .woocommerce-message .button.wc-forward {
+    display: none;
+}
+
+.goldsmith-btn:not(.loading) .loading-wrapper {
+	display: none;
+}
+
+.processing .goldsmith-btn:not(.loading) .loading-wrapper {
+    display: flex;
+    background: var(--goldsmith-dark);
+}
+
+.goldsmith-btn .loading-wrapper {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--goldsmith-light);
+}
+/* shop buttons  */
+
+/* woocommerce-message */
+.nt-goldsmith-content .woocommerce-message {
+    padding: 15px;
+    background: var(--goldsmith-gray-soft);
+    margin-bottom: 40px;
+    max-width: 66%;
+}
+.woocommerce-error strong {
+    color: var(--goldsmith-red);
+    text-decoration: underline;
+}
+/* woocommerce-message */
+
+.animation {
+	will-change: opacity, transform;
+	opacity: 0;
+	-moz-animation: none;
+	-webkit-animation: none;
+	animation: none;
+}
+
+/*/////////////////////////////////////
+13 >-----> PRODUCT ALL KEYFRAMES
+/////////////////////////////////////*/
+@keyframes stock-progress-bar {
+	from {
+		width: 100%
+	}
+
+	to {
+		width: 0
+	}
+}
+
+@keyframes slide-down {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes goldsmithfadeInLeft {
+	0% {
+		transform: translate3d(20px, 0, 0);
+	}
+
+	100% {
+		transform: none;
+	}
+}
+
+@keyframes goldsmithfadeOutLeft {
+	0% {
+		transform: translate3d(20px, 0, 0);
+	}
+
+	100% {
+		transform: none;
+	}
+}
+
+
+.woocommerce-form-login-toggle,
+.woocommerce-form-coupon-toggle {
+    background-color: var(--goldsmith-gray-soft);
+    margin-bottom: 0;
+    padding: 10px 20px;
+    border: 1px solid var(--goldsmith-gray);
+    max-width: 450px;
+}
+
+.woocommerce-form.woocommerce-form-login.login,
+.woocommerce-form-register,
+.checkout_coupon.woocommerce-form-coupon {
+    max-width: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* thank you page */
+.woocommerce-thankyou-order-details {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px;
+	border: 2px solid var(--goldsmith-gray);
+}
+
+.woocommerce-order-received .woocommerce-order-details,
+.woocommerce-order-received .woocommerce-customer-details {
+	padding: 15px;
+	border: 2px solid var(--goldsmith-gray);
+	margin-top: 30px;
+}
+
+.woocommerce-order-received .woocommerce-order-details address p {
+	margin: 0px;
+}
+
+.woocommerce-thankyou-order-details li {
+	display: inline-flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.woocommerce-thankyou-order-details li+li {
+	margin-right: 15px;
+	padding-right: 15px;
+	border-right: 1px dashed var(--goldsmith-gray);
+}
+
+.woocommerce-order-received table.order_details {
+	width: 100%;
+}
+
+.woocommerce-order-received .woocommerce-order-details tr {
+	border-bottom: 1px solid var(--goldsmith-gray);
+	line-height: 2.5em;
+}
+
+.woocommerce-order-received .woocommerce-order-details tfoot tr:last-child {
+	border-bottom: 0;
+}
+
+/* thank you page */
+
+
+/* lost password */
+.goldsmith-lost-reset-password-wrapper .goldsmith-flex {
+	flex-direction: column;
+}
+
+.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+	display: inline-block;
+	background: var(--goldsmith-gray-soft);
+	border: 1px solid var(--goldsmith-gray);
+	padding: 10px 20px;
+	color: var(--goldsmith-dark);
+}
+
+ul.wc-bacs-bank-details.order_details.bacs_details {
+    margin: 0;
+}
+
+h2.wc-bacs-bank-details-heading {
+    margin: 30px 0 10px;
+    font-size: 22px;
+}
+h3.wc-bacs-bank-details-account-name {
+    font-size: 18px;
+}
+
+
+.goldsmith-checkout-footer-item.woocommerce-shipping-totals.shipping {
+    display: block;
+    padding: 10px;
+    background: var(--goldsmith-gray-soft);
+    margin-top: 10px;
+}
+
+
+ul.goldsmith-product-features-list {
+    padding-right: 20px;
+}
+
+
+/* PAGINATION */
+.goldsmith-woocommerce-pagination {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.goldsmith-woocommerce-pagination ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+	margin-bottom: -10px;
+	padding: 0;
+}
+
+.goldsmith-woocommerce-pagination ul.page-numbers li {
+	display: inline-block;
+	margin-bottom: 10px;
+	border: 0;
+}
+
+.goldsmith-woocommerce-pagination ul.page-numbers li+li {
+	margin-right: 10px;
+}
+
+.goldsmith-woocommerce-pagination ul li a,
+.goldsmith-woocommerce-pagination ul li span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: var(--goldsmith-dark);
+	background-color: var(--goldsmith-gray-soft);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 50px;
+	border-radius: 4px;
+}
+
+.goldsmith-woocommerce-pagination ul li a:focus,
+.goldsmith-woocommerce-pagination ul li a:hover,
+.goldsmith-woocommerce-pagination ul li span.current {
+	color: var(--goldsmith-light);
+	background-color: var(--goldsmith-dark);
+}
+/* PAGINATION */
+.goldsmith-sticky-cart-toggle {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 103;
+    background: var(--goldsmith-dark);
+    color: #fff;
+    border: 1px solid rgb(0 0 0 / 0%);
+    transition: .5s;
+    left: 25px;
+    bottom: 75px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.bottom-popup-cart-active .goldsmith-sticky-cart-toggle {
+    bottom: 135px;
+}
+.goldsmith-sticky-cart-toggle.active {
+    background: var(--goldsmith-success);
+}
+.goldsmith-sticky-cart-toggle svg {
+    fill: #fff;
+}
+#goldsmith-cart-fly{
+    position: absolute;
+    width: 50px;
+    opacity: 1;
+    z-index: 9999999;
+    font-size: 20px;
+    line-height: 3;
+    text-align: center;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.panel-content .cart-item-details dd,
+.panel-content .cart-item-details dt{
+    display: inline-block;
+    margin: 0!important;
+}
+.goldsmith-quickview-wrapper .goldsmith-btn.single_add_to_cart_button {
+    justify-content: center;
+}
+.quantity.type-hidden {
+    display: none;
+}
+.goldsmith-product-loop-inner:hover span.goldsmith-out-of-stock {
+    display: none;
+}
+
+.goldsmith-variations {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+.goldsmith-btn-reset-wrapper:not(.active) {
+    display: none;
+}
+.goldsmith-btn-reset-wrapper>.reset-title {
+    opacity: 0;
+}
+.variations-item {
+    width: 100%;
+    gap: 15px;
+}
+.woocommerce-variation-add-to-cart>*,
+.variations-item .value {
+    flex: 1 0 auto;
+}
+.product-after-cart-wrapper .goldsmith-product-button.type-btn {
+    width: 50%;
+    gap: 5px;
+    background-color: var(--goldsmith-gray);
+    font-size: 14px;
+}
+.product-after-cart-wrapper .goldsmith-product-button.type-btn:hover{
+    color: var(--goldsmith-light);
+    background-color: var(--goldsmith-dark);
+}
+.product-after-cart-wrapper .goldsmith-product-button.type-btn:hover svg{
+    fill: var(--goldsmith-light);;
+}
+.goldsmith-summary-item.goldsmith-viewed-offer-time.expired {
+    display: none;
+}
+.goldsmith-product-info-top a.added_to_cart.wc-forward {
+    display: none;
+}

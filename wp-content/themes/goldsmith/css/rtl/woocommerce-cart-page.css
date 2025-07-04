@@ -1,0 +1,179 @@
+.goldsmith-woocommerce-cart-form .goldsmith-cart-item {
+	padding-top: 15px;
+	border-top: 1px solid var(--goldsmith-gray);
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.goldsmith-woocommerce-cart-form .goldsmith-cart-item+.goldsmith-cart-item {
+	margin-top: 15px;
+}
+
+.goldsmith-woocommerce-cart-form .product-remove {
+	text-align: left;
+	position: relative;
+}
+
+.goldsmith-woocommerce-cart-form .remove {
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+}
+
+.goldsmith-woocommerce-cart-form .remove svg {
+	fill: var(--goldsmith-gray-dark);
+	color: var(--goldsmith-gray-dark);
+}
+
+.goldsmith-woocommerce-cart-form .remove:hover svg {
+	fill: var(--goldsmith-dark);
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.goldsmith-woocommerce-cart-form .goldsmith-price {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.goldsmith-woocommerce-cart-form .goldsmith-price .cart-quantity {
+	font-size: 13px;
+	font-weight: 500;
+	color: var(--goldsmith-dark);
+}
+
+.goldsmith-woocommerce-cart-form .goldsmith-quantity-small .quantity {
+	margin-left: 0px;
+}
+
+.goldsmith-woocommerce-cart-form .quantity-button.plus,
+.goldsmith-woocommerce-cart-form .quantity-button.minus {
+	width: 25px;
+}
+
+.goldsmith-woocommerce-cart-form .goldsmith-actions .goldsmith-input {
+	margin-left: 10px;
+}
+
+.goldsmith-woocommerce-cart-form .goldsmith-hidden {
+	position: relative;
+	overflow: hidden;
+}
+
+.goldsmith-woocommerce-cart-form .goldsmith-hidden .goldsmith-btn {
+	will-change: transform;
+	-webkit-transition: opacity 0.25s ease, ease;
+	transition: opacity 0.25s ease, transform 0.25s ease;
+	opacity: 0;
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+.goldsmith-woocommerce-cart-form .goldsmith-btn[aria-disabled="false"] {
+	-moz-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+.goldsmith-woocommerce-cart-form .goldsmith-meta-right {
+	justify-content: space-between;
+}
+
+.goldsmith-woocommerce-cart-form .woocommerce-shipping-methods {
+	list-style: none;
+}
+
+@media(max-width:768px) {
+	.nt-goldsmith-content.content-container,
+	.has-header-sidebar .nt-goldsmith-content.content-container {
+     padding: 0;
+    }
+}
+
+@media(max-width:576px) {
+	.goldsmith-meta-right.goldsmith-align-center {
+		margin-top: 10px;
+	}
+    .goldsmith-woocommerce-cart-form .goldsmith-actions .goldsmith-input {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .woocommerce-cart-form .cart-apply-button {
+        width: 100%;
+    }
+    .woocommerce-cart-form .cart-update-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.goldsmith-cart-totals {
+	padding: 30px;
+	border: 2px solid var(--goldsmith-gray);
+}
+
+.goldsmith-cart-totals .goldsmith-cart-totals-inner {
+	margin: 0px 0 20px;
+}
+
+.goldsmith-cart-totals .goldsmith-cart-total-title {
+	margin: 0;
+}
+
+.goldsmith-cart-totals .goldsmith-cart-total {
+	color: var(--goldsmith-dark);
+	overflow: hidden;
+	padding-top: 15px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.goldsmith-cart-totals .goldsmith-cart-total .cart-total-value,
+.goldsmith-cart-totals .goldsmith-cart-total .cart-total-value strong {
+	color: var(--goldsmith--black);
+	font-weight: 500;
+}
+
+.goldsmith-cart-totals .goldsmith-cart-total .goldsmith-shipping-calculator-button {
+	color: var(--goldsmith-gray-dark);
+}
+
+.woocommerce-shipping-calculator a {
+	color: var(--goldsmith-dark);
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.woocommerce-shipping-calculator a .dropdown-btn {
+	margin-right: 10px;
+	margin-top: 3px;
+	font-size: 12px;
+}
+
+ul#shipping_method {
+    margin: 10px 0;
+}
+
+/* cross-sells */
+.cross-sells.goldsmith-section {
+	margin-top: 100px;
+}
+
+@media (max-width: 992px) {
+    .goldsmith-cart-totals.cart_totals {
+        margin-top: 60px;
+    }
+}

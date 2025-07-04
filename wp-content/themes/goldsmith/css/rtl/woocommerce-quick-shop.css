@@ -1,0 +1,150 @@
+/*
+* goldsmith quick shop
+*/
+
+.goldsmith-quickshop-wrapper {
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.goldsmith-quickshop-wrapper .goldsmith-variations {
+	margin-bottom: 20px;
+}
+
+.goldsmith-quickshop-wrapper .woocommerce-message {
+	margin-top: 30px;
+	padding: 0;
+	background: none;
+	color: var(--goldsmith-success);
+	text-align: right;
+}
+
+.goldsmith-quickshop-wrapper .goldsmith-quickshop-form-wrapper {
+	display: block;
+}
+
+.goldsmith-quickshop-wrapper .goldsmith-quickshop-form-wrapper .woocommerce div.product span.price,
+.goldsmith-quickshop-wrapper .goldsmith-quickshop-form-wrapper .woocommerce-variation-price .price,
+.goldsmith-quickshop-wrapper .goldsmith-price {
+    color: var(--goldsmith-gray-dark);
+    font-size: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.goldsmith-quickshop-wrapper .goldsmith-small-title,
+.goldsmith-quickshop-wrapper .goldsmith-small-title a {
+	margin-left: 15px;
+}
+
+.goldsmith-quickshop-wrapper form.goldsmith-summary-item.goldsmith-flex.cart.grouped_form .goldsmith-after-cart-grouped-button-wrapper button {
+	width: auto;
+	flex: 0 0 100%;
+}
+
+.product.goldsmith-quickshop-wrapper .single_variation_wrap.single-product-add-to-cart-type-black .woocommerce-variation-add-to-cart,
+.product.goldsmith-quickshop-wrapper .single_variation_wrap.single-product-add-to-cart-type-gray .woocommerce-variation-add-to-cart {
+	margin-top: 10px;
+	background: transparent;
+	border: 0;
+	padding: 0;
+}
+
+.goldsmith-quickshop-wrapper ul.woocommerce-error {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	margin-top: 10px;
+	padding: 25px 15px 15px 15px;
+	background: var(--goldsmith-red);
+	color: #fff;
+}
+
+.goldsmith-quickshop-wrapper .woocommerce-message {
+	margin-top: 30px;
+	padding: 0;
+	background: none;
+	color: var(--goldsmith-success);
+	text-align: right;
+	font-size: 14px;
+}
+
+.goldsmith-quickshop-wrapper .goldsmith-btn {
+    flex: 1 1 0;
+}
+
+.goldsmith-quickshop-wrapper .goldsmith-quickshop-buttons-wrapper:not(.active),
+.goldsmith-quickshop-wrapper .goldsmith-quickshop-notices-wrapper:not(.active),
+.goldsmith-quickshop-wrapper .goldsmith-product-button,
+.goldsmith-quickshop-wrapper .woocommerce-message .button.wc-forward {
+	display: none;
+}
+
+.goldsmith-quickshop-wrapper .mfp-close.goldsmith-panel-close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 34px;
+    height: 34px;
+    opacity: 1;
+    background: var(--goldsmith-dark);
+}
+
+.goldsmith-quickshop-wrapper .goldsmith-panel-close-button:before,
+.goldsmith-quickshop-wrapper .goldsmith-panel-close-button:after {
+	background-color: #fff;
+	opacity: 1;
+}
+
+.goldsmith-quickshop-wrapper .goldsmith-quickshop-buttons-wrapper {
+	position: absolute;
+	width: 100%;
+	right: 0;
+	bottom: -38px;
+}
+
+.goldsmith-quickshop-wrapper .goldsmith-quickshop-buttons-wrapper .goldsmith-btn {
+	min-width: auto !important;
+	width: 50%;
+	cursor: pointer;
+}
+
+.goldsmith-quickshop-wrapper .minicart-extra-text {
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	top: -41px;
+	right: 0;
+	padding: 7px 30px 7px 40px;
+	background: var(--goldsmith-dark);
+	text-align: right;
+	color: #fff;
+}
+
+.goldsmith-quickshop-wrapper .woocommerce-variation-price {
+    margin: 0px 0 10px;
+}
+
+.goldsmith-quickshop-wrapper .woobt-alert {
+    padding: 6px 14px 6px 10px;
+    border: 1px solid var(--goldsmith-warning-border);
+    background-color: var(--goldsmith-warning-bg);
+    font-size: 14px;
+    color: var(--goldsmith-warning);
+    border-radius: var(--goldsmith-border-radius);
+}
+
+.goldsmith-quickshop-wrapper .woobt-products .woobt-product {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.goldsmith-quickshop-wrapper .woobt-wrap .woobt-products {
+    margin: 0;
+}
+
+.goldsmith-quickshop-wrapper .goldsmith-after-cart-button-wrapper {
+    display: none;
+}

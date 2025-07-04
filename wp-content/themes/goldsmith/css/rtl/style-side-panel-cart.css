@@ -1,0 +1,227 @@
+/* cart-area */
+.cart-area .mini-cart-item {
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: space-between;
+	position: relative;
+}
+.cart-area .mini-cart-item + .mini-cart-item {
+	margin-top: 25px;
+}
+
+.cart-area.cart-item-loading .goldsmith-mini-cart-item-loading {
+	position: relative;
+	min-height: 80px;
+}
+
+.cart-area:not(.cart-item-loading) .goldsmith-mini-cart-item-loading {
+	display: none;
+}
+
+.goldsmith-perfect-scrollbar .mini-cart-item:last-child {
+	margin-bottom: 0px;
+}
+
+.cart-item-details {
+	display: flex;
+	flex: 1;
+}
+
+.cart-area .product-link>span {
+    display: block;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.cart-area .cart-item-title {
+	display: flex;
+	flex-direction: column;
+	margin-right: 15px;
+	flex: 1;
+}
+
+.cart-area .cart-quantity-wrapper {
+	margin-top: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 1;
+}
+
+.cart-area .quantity,
+.woocommerce .cart-area .quantity {
+    margin: 0;
+    box-shadow: none;
+}
+
+.quantity-button.disabled {
+    pointer-events: none;
+}
+
+.cart-area .quantity input,
+.woocommerce .cart-area .quantity input,
+.woocommerce .cart-area .quantity .qty {
+	max-height: 22px;
+    min-width: auto;
+}
+
+.cart-area .quantity-button.plus,
+.cart-area .quantity-button.minus {
+	color: var(--goldsmith-dark);
+	background: var(--goldsmith-light);
+	font-weight: 400;
+}
+
+.cart-area .quantity-button.plus:hover,
+.cart-area .quantity-button.minus:hover {
+	background: var(--goldsmith-gray);
+}
+
+.cart-area .quantity {
+    background: var(--goldsmith-light);
+    max-width: 100px;
+}
+
+.cart-area .goldsmith-price,
+.cart-item-title .goldsmith-price .cart-quantity {
+	color: var(--goldsmith-dark-soft);
+}
+
+.cart-item-title .cart-name,
+.goldsmith-content-info .product-name {
+	color: var(--goldsmith-dark);
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.cart-item-title .goldsmith-price span,
+.goldsmith-content-info .goldsmith-price {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.cart-item-title .goldsmith-price {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.cart-item-title .goldsmith-price .cart-quantity {
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--goldsmith-dark);
+}
+
+.cart-area .del-icon {
+	width: 22px;
+	height: 22px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+}
+
+.cart-area .del-icon .variation {
+	display: none;
+}
+
+.cart-area .del-icon a svg,
+.wishlist-area .goldsmith-svg-icon.mini-icon,
+.compare-area .goldsmith-svg-icon.mini-icon {
+	fill: var(--goldsmith-gray-dark);
+	color: var(--goldsmith-gray-dark);
+}
+
+.cart-area .del-icon a {
+	color: var(--goldsmith-dark);
+	display: inline-flex;
+}
+
+.cart-area .del-icon:hover svg {
+	fill: var(--goldsmith-dark);
+}
+
+.cart-area .del-icon:hover a {
+	color:var(--goldsmith-light);
+}
+
+.cart-area .cart-total {
+	margin-bottom: 22px;
+}
+
+.cart-area .cart-total-price {
+	border-top: 1px solid var(--goldsmith-gray);
+	overflow: hidden;
+	padding-top: 15px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--goldsmith-dark);
+}
+
+.cart-empty-content .minicart-title {
+	display: none;
+}
+
+.goldsmith-cart-empty-wrapper {
+	text-align: center;
+}
+
+.goldsmith-cart-empty-wrapper .goldsmith-btn-medium {
+	max-width: 170px;
+	margin: 0 auto;
+}
+
+.goldsmith-cart-empty-icon,
+.cart-area svg.shopBag {
+	max-width: 100px;
+	max-height: 100px;
+	fill: var(--goldsmith-gray);
+	opacity: 0.5;
+	margin-right: -14px;
+	margin-bottom: 10px;
+}
+
+.cart-bottom-btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.cart-bottom-btn .goldsmith-btn {
+	flex: auto;
+	margin: 0 0 10px 10px;
+}
+
+.cart-bottom-btn {
+	margin-left: -10px;
+}
+
+.quantity.hidden {
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.goldsmith-not-found-info-wrapper svg.shopBag,
+.cart-empty-content svg.shopBag {
+	max-width: 100px;
+	max-height: 100px;
+	fill: var(--goldsmith-gray);
+	opacity: 0.5;
+}
+
+.cart-quantity-wrapper.ajax-quantity.loading .quantity:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/* cart-area */

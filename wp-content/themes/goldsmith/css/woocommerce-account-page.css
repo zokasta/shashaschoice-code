@@ -1,0 +1,234 @@
+
+.goldsmith-myaccount-navigation ul li {
+    list-style: none;
+}
+.goldsmith-myaccount-navigation ul li {
+    padding-top: 15px;
+}
+
+.goldsmith-myaccount-page-content.row {
+    justify-content: center;
+}
+
+.goldsmith-myaccount-navigation ul li {
+    padding-top: 9px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+.goldsmith-myaccount-navigation ul li.is-active>a,
+.goldsmith-myaccount-navigation ul li:hover>a {
+    color: var(--goldsmith-red);
+}
+.goldsmith-myaccount-navigation ul li>a:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "";
+    font-weight: 900;
+    margin-right:5px;
+    width: 20px;
+    display: inline-block;
+}
+li.menu-item.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--dashboard>a:before {
+    content: "\f0db";
+}
+li.menu-item.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--orders>a:before {
+    content: "\f466";
+}
+li.menu-item.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads>a:before {
+    content: "\f019";
+}
+li.menu-item.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-address>a:before {
+    content: "\f3c5";
+}
+li.menu-item.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-account>a:before {
+    content: "\f044";
+}
+li.menu-item.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--wt-smart-coupon>a:before {
+	content: "\f02c";
+}
+li.menu-item.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout>a:before {
+	content: "\f2f5";
+}
+li.menu-item.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--yardim>a:before {
+    content: "\f05a";
+}
+.goldsmith-myaccount-content button.woocommerce-Button.button {
+    margin-top: 15px;
+}
+.goldsmith-myaccount-content .woocommerce-address-fields {
+    max-width: 600px;
+}
+.goldsmith-myaccount-content .select2-container .select2-selection--single {
+    height: 53px;
+    border-radius: 0;
+}
+.goldsmith-myaccount-content .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 53px;
+}
+.goldsmith-myaccount-content .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 53px;
+    width: 30px;
+}
+.woocommerce-form input:not([type="checkbox"]):not([type="radio"]),
+.woocommerce-form select,
+.woocommerce-form textarea,
+.goldsmith-myaccount-content input:not([type="checkbox"]):not([type="radio"]),
+.goldsmith-myaccount-content select,
+.goldsmith-myaccount-content textarea {
+    width: 100%;
+}
+.goldsmith-myaccount-content input[type="password"]{
+    width: 100%;
+}
+.goldsmith-myaccount-content .woocommerce-message {
+    max-width: 100%;
+    text-align: center;
+}
+.goldsmith-myaccount-content  a.woocommerce-Button.button {
+    margin-bottom: 15px;
+}
+.woocommerce-form .woocommerce-form-register__submit,
+.woocommerce-form .woocommerce-form-login__submit {
+    margin-top: 15px;
+}
+.goldsmith-myaccount-steps-register {
+    overflow: hidden;
+}
+.goldsmith-myaccount-steps-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.goldsmith-myaccount-steps-buttons>span {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    cursor: pointer;
+}
+.goldsmith-myaccount-steps-buttons>span .goldsmith-svg-icon {
+    margin-right: 10px;
+}
+.goldsmith-myaccount-steps-register .woocommerce-form.woocommerce-form-login.login,
+.goldsmith-myaccount-steps-register .woocommerce-form-register,
+.goldsmith-myaccount-steps-register .checkout_coupon.woocommerce-form-coupon {
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.goldsmith-myaccount-navigation ul li:last-child {
+    border-bottom: 0;
+}
+nav.goldsmith-myaccount-navigation {
+    padding-right: 20px;
+}
+.col-12.col-lg-6.goldsmith-address {
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    width: calc(50% - 10px);
+    padding: 20px;
+    position:relative;
+    border-radius: 4px;
+}
+.col-12.col-lg-6.goldsmith-address a.edit {
+    position: absolute;
+    right: 20px;
+    padding: 6px 15px;
+    top: 22px;
+    background: aqua;
+    line-height: 1;
+    color: var(--goldsmith-light);
+    background-color: var(--goldsmith-red);
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+
+tbody tr.woocommerce-orders-table__row {
+    border-top: 1px solid #ddd;
+    padding: 20px;
+}
+table.woocommerce-orders-table.account-orders-table {
+    width: 100%;
+    padding: 20px!important;
+    border: 1px solid #ddd;
+}
+th.woocommerce-orders-table__header {
+    border-right: 1px solid var(--goldsmith-gray);
+    padding: 10px;
+    background-color: var(--goldsmith-gray-soft);
+}
+td.woocommerce-orders-table__cell {
+    border-right: 1px solid var(--goldsmith-gray-soft);
+    padding: 10px;
+}
+tbody tr td:last-child {
+    border-right: 0;
+}
+td a.woocommerce-button.wp-element-button.button {
+    min-width: auto;
+    margin-bottom: 2px;
+}
+input.xoo-aff-required.xoo-aff-phone {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.goldsmith-myaccount-page-content-inner {
+    box-shadow: 0 -1px 10px 0 #acabab4d;
+    padding: 20px;
+}
+
+.woocommerce-notices-wrapper + p {
+    padding: 10px 20px;
+    background: var(--goldsmith-yellow-soft);
+    border: 1px dashed var(--goldsmith-yellow);
+    border-radius: 4px;
+    margin-left: -10px;
+    text-align:center;
+}
+@media(max-width:768px) {
+.goldsmith-myaccount-page-content.row {
+    padding: 50px 0;
+}
+.goldsmith-myaccount-page-content-inner {
+    padding: 30px;
+}
+.woocommerce-account.woocommerce-orders .goldsmith-myaccount-content {
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+td.woocommerce-orders-table__cell {
+    border-right: 1px solid var(--goldsmith-gray-soft);
+    padding: 10px;
+    min-width: 120px;
+}
+
+.col-12.col-lg-6.goldsmith-address {
+    margin-right: auto;
+    margin-left: auto;
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+}
+.woocommerce-notices-wrapper + p {
+    margin-left: 0px;
+}
+.col-12.col-lg-6.goldsmith-address {
+    width: calc(100% - 30px);
+}
+.goldsmith-myaccount-page-content .col-md-10 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+}
+@media(max-width:576px) {
+.goldsmith-myaccount-page-content.row {
+    padding: 40px 0;
+}
+.goldsmith-myaccount-page-content .col-content {
+    margin-top: 30px;
+}
+.woocommerce-notices-wrapper + p {
+    margin-left: 0px;
+    padding: 10px;
+}
+}

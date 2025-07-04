@@ -1,0 +1,366 @@
+.deals-heading {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.deals-heading-top {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--goldsmith-gray);
+}
+
+.deals-heading-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--goldsmith-gray);
+}
+
+.deals-heading .title-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inline-flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: center;
+    align-items: baseline;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.deals-heading-bottom .title-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.deals-heading .title {
+    margin: 0;
+}
+
+.deals-heading-top .title {
+    margin-right: 20px;
+}
+
+.deals-item {
+    position: relative;
+    padding: 15px;
+    border: 1px solid var(--goldsmith-gray);
+    -webkit-box-shadow: 1px 2px 4px rgba(33, 37, 41, 0.05);
+    box-shadow: 1px 2px 4px rgba(33, 37, 41, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.type-grid .row {
+    margin-bottom: -30px;
+}
+
+.type-grid .deals-item {
+    margin-bottom: 30px;
+}
+
+.deals-item:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    border: 3px solid var(--goldsmith-red);
+    border-radius: 10px;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    will-change: opacity;
+    -webkit-transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+
+.deals-item:hover:before {
+    opacity: 1;
+}
+
+.deals-item .deals-product-labels {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.deals-item .thumb-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.deals-item .deals-thumb {
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid var(--goldsmith-gray);
+}
+
+.deals-item:hover .thumb-wrapper img {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transform-origin: center center;
+    -moz-transition: all .5s cubic-bezier(.25,.46,.45,.94);
+    -o-transition: all .5s cubic-bezier(.25,.46,.45,.94);
+    -webkit-transition: all .5s cubic-bezier(.25,.46,.45,.94);
+    transition: all .5s cubic-bezier(.25,.46,.45,.94);
+}
+
+.deals-inner .goldsmith-label + .goldsmith-label {
+    margin-top: 5px;
+}
+
+.deals-item .goldsmith-product-button {
+    background-color: var(--goldsmith-light);
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deals-item .goldsmith-wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+}
+
+.deals-item .thumb-wrapper .goldsmith-product-button + .goldsmith-product-button {
+    margin-top: 5px;
+}
+
+.deals-item .goldsmith-svg-icon {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+.deals-item svg {
+    fill: var(--goldsmith-dark);
+}
+
+.goldsmith-product-hint {
+    background-color: rgba(51,51,51,.9);
+    font-size: 12px;
+    line-height: 1;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    position: absolute;
+    top: auto;
+    right: 50px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    padding: 8px 9px 8px 9px;
+    color: var(--goldsmith-light);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 7px 15px rgba(0,0,0,.3);
+    -webkit-transition: opacity .3s linear,right .3s linear;
+    transition: opacity .3s linear,right .3s linear;
+}
+
+.goldsmith-product-hint:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: -10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent transparent transparent rgba(51,51,51,.9);
+}
+
+.goldsmith-product-button:hover .goldsmith-product-hint {
+    visibility: visible;
+    opacity: 1;
+    right: 40px;
+}
+
+.hints-top .goldsmith-product-hint {
+    top: 0px;
+    right: auto;
+    left: auto;
+}
+
+.hints-top .goldsmith-product-hint:after {
+    position: absolute;
+    margin-top: 0px;
+    bottom: -10px;
+    top: auto;
+    right: auto;
+    left: calc(50% - 3px);
+    border-color: rgba(51,51,51,.9) transparent transparent transparent;
+}
+
+.hints-top .goldsmith-product-button:hover .goldsmith-product-hint {
+    right: auto;
+    top: -30px;
+}
+
+.deals-inner .stock-progress {
+    height: 8px;
+    width: 100%;
+    background: var(--goldsmith-gray);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.deals-inner .stock-progressbar {
+    background: var(--goldsmith-red);
+    height: 100%;
+}
+
+.deals-inner .stock-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.deals-inner .deals-part {
+    margin: 0;
+    line-height: 1;
+}
+
+.deals-inner .product-details {
+    font-size: 14px;
+    line-height: inherit;
+}
+
+.deals-inner .rating.deals-part a {
+    pointer-events: none;
+}
+
+.deals-inner .deals-part + .deals-part {
+    margin-top: 15px;
+}
+
+.deals-inner .added_to_cart.wc-forward {
+    display: none;
+}
+
+.deals-inner .stock-details {
+    font-size: 12px;
+}
+
+.deals-inner .status-value {
+    font-weight: bold;
+    color: var(--goldsmith-dark);
+}
+
+.deals-item .thumb-wrapper .deals-buttons {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+}
+
+.style-vertical .thumb-wrapper {
+    margin-bottom: 20px;
+}
+
+.deals-inner .details-wrapper .style-2 {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.deals-inner .style-2 .goldsmith-btn {
+    border: 1px solid var(--goldsmith-dark);
+    min-width: auto;
+}
+
+.deals-item .style-2 .goldsmith-product-button {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background: transparent;
+}
+
+.deals-part .cr-qna-link,
+.deals-part .cr-qna-separator{
+    display: none;
+}
+
+.gradient-bg .time-count {
+    width: 34px;
+    height: 34px;
+    color: var(--goldsmith-light);
+    border-radius: var(--goldsmith-border-radius);
+	background: var(--goldsmith-gradient-1);
+}
+
+@media(min-width:992px){
+    .deals-item .style-horizontal {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .style-horizontal .thumb-wrapper {
+        margin: 0px;
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    .style-horizontal .details-wrapper {
+        flex: 0 0 60% ;
+        padding-left: 20px;
+    }
+    .deals-inner .stock-details {
+        font-size: 14px;
+    }
+    .deals-item .thumb-wrapper .deals-buttons {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-transition: all .25s cubic-bezier(.25,.46,.45,.94);
+        -o-transition: all .25s cubic-bezier(.25,.46,.45,.94);
+        -webkit-transition: all .25s cubic-bezier(.25,.46,.45,.94);
+        transition: all .25s cubic-bezier(.25,.46,.45,.94);
+        z-index: 2;
+    }
+    .deals-item:hover .thumb-wrapper .deals-buttons {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@media(min-width:768px){
+    .deals-item {
+        padding: 30px;
+    }
+    
+    .deals-inner .style-2 .goldsmith-btn {
+        margin-right: 15px;
+        min-width: 160px;
+    }
+}

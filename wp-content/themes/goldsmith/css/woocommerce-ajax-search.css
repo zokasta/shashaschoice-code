@@ -1,0 +1,108 @@
+/* live search autocomplete */
+/* clears the 'X' from Internet Explorer */
+input.goldsmith-as[type=search]::-ms-clear,
+input.goldsmith-as[type=search]::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input.goldsmith-as[type="search"]::-webkit-search-decoration,
+input.goldsmith-as[type="search"]::-webkit-search-cancel-button,
+input.goldsmith-as[type="search"]::-webkit-search-results-button,
+input.goldsmith-as[type="search"]::-webkit-search-results-decoration {
+	display: none !important;
+}
+
+.goldsmith-asform-container {
+	width: 100%;
+}
+
+.autocomplete-suggestions {
+    padding: 10px;
+    background: var(--goldsmith-light);
+    border: 1px solid var(--goldsmith-gray);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-width: 100% !important;
+    top: 50px;
+    max-height: calc(100vh - 210px)!important;
+}
+
+.result-position-bottom .autocomplete-suggestions {
+    top: 50px;
+    bottom: auto;
+}
+
+.autocomplete-suggestion {
+	padding: 0px;
+	cursor: pointer;
+	text-align: left;
+	line-height: inherit;
+	display: flex;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.goldsmith-asform-container form.goldsmith-asform {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-width: 100%;
+	position: relative;
+}
+
+.no-result+.autocomplete-suggestions {
+	background: var(--goldsmith-bg-soft);
+}
+
+.no-result+.autocomplete-suggestion {
+	background: transparent;
+	padding: 0px;
+	line-height: inherit;
+}
+
+.autocomplete-suggestion img,
+.autocomplete-suggestion .value {
+	margin-right: 15px;
+}
+
+.autocomplete-suggestion .woocommerce-variation-price .price,
+.autocomplete-suggestion .goldsmith-price {
+	font-size: 14px;
+}
+
+.autocomplete-suggestion:hover {
+	background-color: var(--goldsmith-gray-background);
+}
+
+.autocomplete-suggestion .value strong {
+	color: var(--goldsmith-primary);
+}
+
+.goldsmith-asform,
+.goldsmith-asform input.goldsmith-as,
+.goldsmith-asform input.goldsmith-as:hover,
+.goldsmith-asform input.goldsmith-as:focus {
+	width: 100%;
+	border: 0;
+	border-radius: 0px;
+	outline: none;
+}
+
+.goldsmith-asform {
+	position: relative;
+	overflow: hidden;
+}
+
+.search-area-top .autocomplete-suggestion .goldsmith-small-title {
+	display: flex;
+	flex-direction: column;
+}
+
+.has-default-header-type-dark .search-area-top .autocomplete-suggestion .goldsmith-small-title,
+.has-default-header-type-dark .goldsmith-asform.no-result+.autocomplete-suggestion strong {
+	color:var(--goldsmith-light);
+}

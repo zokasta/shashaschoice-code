@@ -1,0 +1,91 @@
+/* masonry grid shop */
+
+@media (min-width: 992px) {
+    .shop-masonry-grid .goldsmith-products.row {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .shop-masonry-grid .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 100%;
+    }
+    .shop-masonry-grid.masonry-column-3 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(8),
+    .shop-masonry-grid.masonry-column-3 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(11),
+    .shop-masonry-grid.masonry-column-3 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(18),
+    .shop-masonry-grid.masonry-column-3 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(21),
+    .shop-masonry-grid.masonry-column-3 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(28),
+    .shop-masonry-grid.masonry-column-3 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(31),
+    .shop-masonry-grid.masonry-column-3 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(38),
+    .shop-masonry-grid.masonry-column-3 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(41) {
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 100%;
+    }
+    .shop-masonry-grid.masonry-column-4 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(11),
+    .shop-masonry-grid.masonry-column-4 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(15),
+    .shop-masonry-grid.masonry-column-4 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(25),
+    .shop-masonry-grid.masonry-column-4 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(29),
+    .shop-masonry-grid.masonry-column-4 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(35),
+    .shop-masonry-grid.masonry-column-4 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(39),
+    .shop-masonry-grid.masonry-column-4 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(45),
+    .shop-masonry-grid.masonry-column-4 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(49){
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 100%;
+    }
+    .shop-masonry-grid.masonry-column-5 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(1),
+    .shop-masonry-grid.masonry-column-5 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(14),
+    .shop-masonry-grid.masonry-column-5 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(19),
+    .shop-masonry-grid.masonry-column-5 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(32),
+    .shop-masonry-grid.masonry-column-5 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(37),
+    .shop-masonry-grid.masonry-column-5 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(50) {
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 100%;
+    }
+    .shop-masonry-grid.masonry-column-6 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(1),
+    .shop-masonry-grid.masonry-column-6 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(17),
+    .shop-masonry-grid.masonry-column-6 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(23),
+    .shop-masonry-grid.masonry-column-6 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(39),
+    .shop-masonry-grid.masonry-column-6 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(45),
+    .shop-masonry-grid.masonry-column-6 .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(61) {
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 100%;
+    }
+    .shop-masonry-grid .goldsmith-products.row .product:not(.goldsmith-product-type-7) {
+        display: inline-grid;
+        width: 100%;
+    }
+    .shop-masonry-grid .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(1) .goldsmith-thumb-wrapper,
+    .shop-masonry-grid .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(11) .goldsmith-thumb-wrapper,
+    .shop-masonry-grid .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(15) .goldsmith-thumb-wrapper {
+        padding-bottom: 114%;
+    }
+    .shop-masonry-grid .goldsmith-products.row .product:not(.goldsmith-product-type-4):nth-child(1) .goldsmith-thumb-wrapper img,
+    .shop-masonry-grid .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(11) .goldsmith-thumb-wrapper img,
+    .shop-masonry-grid .goldsmith-products.row .product:not(.goldsmith-product-type-7):nth-child(15) .goldsmith-thumb-wrapper img {
+        position: absolute;
+        top: 0;
+        right:0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .shop-masonry-grid.masonry-column-3 .goldsmith-products.row {
+        grid-template-columns: repeat(4,1fr);
+    }
+    .shop-masonry-grid.masonry-column-4 .goldsmith-products.row {
+        grid-template-columns: repeat(5,1fr);
+    }
+    .shop-masonry-grid.masonry-column-5 .goldsmith-products.row {
+        grid-template-columns: repeat(6,1fr);
+    }
+    .shop-masonry-grid.masonry-column-6 .goldsmith-products.row {
+        grid-template-columns: repeat(7,1fr);
+    }
+}

@@ -1,0 +1,678 @@
+/*/////////////////////////////////
+01 >-----> CHECKOUT GENERAL
+/////////////////////////////////*/
+.woocommerce form .form-row,
+.goldsmith-customer-billing-details .woocommerce-billing-fields .form-row {
+	margin: 0 0 25px;
+}
+
+form .form-row.goldsmith-coupon-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 0;
+}
+
+form .form-row.goldsmith-coupon-row .goldsmith-btn {
+	height: auto;
+}
+
+.woocommerce-input-wrapper {
+	width: 100%;
+}
+
+.woocommerce-input-wrapper input,
+.woocommerce-input-wrapper select,
+.woocommerce-input-wrapper textarea {
+	border: 1px solid var(--goldsmith-gray);
+	max-width: 100%;
+	width: 100%;
+}
+
+.woocommerce-input-wrapper input[type=checkbox],
+.woocommerce-input-wrapper input[type=radio] {
+	width: auto;
+}
+
+input[type='radio']:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: var(--goldsmith-dark);
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid #fff;
+}
+
+input[type='checkbox']:after {
+	width: 15px;
+	height: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+input[type='checkbox']:checked:after {
+	width: 15px;
+	height: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: var(--goldsmith-dark);
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid #fff;
+}
+
+span.goldsmith-checkbox input[type="checkbox"] {
+	border: 0;
+	outline: none;
+	margin: 0;
+	outline: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 10px;
+	height: 10px;
+}
+
+@media(max-width:480px) {
+	input[type='radio']:after {
+		width: 17px;
+		height: 17px;
+		border-radius: 17px;
+		top: -2px;
+		left: 0px;
+	}
+
+	input[type='radio']:checked:after {
+		width: 17px;
+		height: 17px;
+		border-radius: 17px;
+		top: -2px;
+		left: 0px;
+	}
+
+	input[type='checkbox']:after {
+		width: 17px;
+		height: 17px;
+		top: -2px;
+		left: 0px;
+	}
+
+	input[type='checkbox']:checked:after {
+		width: 17px;
+		height: 17px;
+		top: -2px;
+		left: 0;
+	}
+}
+
+.place-order p.form-row.validate-required {
+	margin: 20px 0 0;
+}
+
+.goldsmith-order-review {
+	padding: 30px;
+	border: 2px solid var(--goldsmith-gray);
+}
+
+span.goldsmith-checkbox {
+	position: relative;
+	display: inline-flex;
+	border: 1px solid var(--goldsmith-gray);
+	padding: 3px;
+}
+
+input#coupon_code {
+	max-width: 160px;
+}
+
+.form-row.goldsmith-coupon-row input#coupon_code {
+	margin-right: 10px;
+}
+
+.checkbox-inline input[type=checkbox],
+.checkbox input[type=checkbox],
+.radio-inline input[type=radio],
+.radio input[type=radio] {
+	position: inherit;
+}
+
+ul.wc_payment_methods.payment_methods.methods {
+	list-style: none;
+	padding:0;
+}
+
+ul.wc_payment_methods.payment_methods.methods li label {
+	color: var(--goldsmith-dark);
+	font-weight: 500;
+	width: auto;
+}
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea,
+.goldsmith-customer-billing-details .woocommerce-billing-fields .form-row input,
+.goldsmith-customer-billing-details .woocommerce-billing-fields .form-row textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	padding: 10px 15px;
+	-webkit-border-radius: 0px;
+	border-radius: 0;
+	background-clip: padding-box;
+	outline: 0;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	vertical-align: middle;
+	font-weight: 400;
+	-moz-transition: background-color .3s ease-in-out,
+		border-color .3s ease-in-out,
+		color .3s ease-in-out;
+	-o-transition: background-color .3s ease-in-out,
+		border-color .3s ease-in-out,
+		color .3s ease-in-out;
+	-webkit-transition: background-color .3s ease-in-out,
+		border-color .3s ease-in-out,
+		color .3s ease-in-out;
+	transition: background-color .3s ease-in-out,
+		border-color .3s ease-in-out,
+		color .3s ease-in-out;
+}
+
+.woocommerce form .form-row textarea {
+	display: block;
+	height: 4em;
+	box-shadow: none;
+}
+
+.woocommerce form .form-row input[type=submit] {
+	margin: 0;
+}
+
+.woocommerce form .form-row label,
+.product-review-form label,
+.goldsmith-customer-billing-details .woocommerce-billing-fields .form-row label {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: var(--goldsmith-dark);
+	margin-bottom: 15px;
+	line-height: 1;
+	font-weight: 500;
+}
+
+a.woocommerce-terms-and-conditions-link {
+	font-weight: 500;
+	text-decoration : underline;
+}
+
+#add_payment_method table.cart td.actions .coupon .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-checkout table.cart td.actions .coupon .input-text {
+	display: block;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 170px;
+	height: 43px;
+	float: left;
+	margin: 0px 5px 0 0;
+	margin: 0px 5px 0 0;
+	padding: 6px 10px 5px;
+	border: 1px solid var(--goldsmith-gray);
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	background-clip: padding-box;
+	outline: 0;
+	text-align: center;
+	line-height: 1;
+	-o-transition: background-color .3s ease-in-out,
+		border-color .3s ease-in-out,
+		color .3s ease-in-out;
+	-webkit-transition: background-color .3s ease-in-out,
+		border-color .3s ease-in-out,
+		color .3s ease-in-out;
+	transition: background-color .3s ease-in-out,
+		border-color .3s ease-in-out,
+		color .3s ease-in-out;
+}
+
+#add_payment_method table.cart input,
+.woocommerce-cart table.cart input,
+.woocommerce-checkout table.cart input {
+	margin: 0;
+	vertical-align: middle;
+	line-height: inherit;
+}
+
+#ship-to-different-address label {
+	margin: 0;
+	color: var(--goldsmith-dark);
+}
+
+.goldsmith-checkout-review-order-table,
+.woocommerce-terms-and-conditions-wrapper {
+	margin-bottom: 20px;
+}
+
+.woocommerce_checkout_place_order {
+	margin: 20px 0 0;
+}
+
+.woocommerce-checkout-review-order-table th {
+	width: 50%;
+}
+
+.woocommerce-NoticeGroup.woocommerce-NoticeGroup-checkout .woocommerce-error {
+	color: var(--goldsmith-dark);
+	text-align: left;
+	padding: 20px;
+	margin: 0 10px 20px 0;
+	max-width: 616px;
+	border: 1px solid var(--goldsmith-red-border);
+    background: var(--goldsmith-red-bg);
+    color: var(--goldsmith-red);
+	z-index: 10;
+}
+
+.goldsmith-before-checkout-form-warapper .woocommerce-error {
+	text-align: left;
+	padding: 10px 20px;
+	margin: 10px 0px;
+	max-width: 450px;
+	border: 1px solid var(--goldsmith-red-border);
+    background: var(--goldsmith-red-bg);
+    color: var(--goldsmith-red);
+}
+
+.woocommerce-error span.close-error {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.woocommerce-error strong {
+	color: var(--goldsmith-red);
+	text-decoration: underline;
+}
+
+/*/////////////////////////////////
+02 >-----> CHECKOUT MULTISTEPS
+/////////////////////////////////*/
+.goldsmith-form-error.hidden,
+.form-row:not(.woocommerce-invalid-required-field) .goldsmith-form-error,
+.goldsmith-checkout-content-wrapper .woocommerce-NoticeGroup-checkout {
+	display: none;
+}
+
+.goldsmith-checkout-content-wrapper .woocommerce-invalid-required-field select,
+.goldsmith-checkout-content-wrapper .woocommerce-invalid-required-field .select2-container--default:not(.select2-container--open) .select2-selection--single,
+.goldsmith-checkout-content-wrapper .woocommerce-invalid-required-field input[type="checkbox"]:not(:focus),
+.goldsmith-checkout-content-wrapper .woocommerce-invalid-required-field input:not(:focus) {
+	border-color: var(--goldsmith-red) !important;
+	background: #ffefee;
+}
+
+.goldsmith-checkout-content-wrapper label .required,
+.goldsmith-woocommerce-form-coupon-wrapper .woocommerce-error,
+.goldsmith-checkout-content-wrapper .goldsmith-form-error {
+	color: var(--goldsmith-red);
+}
+
+.goldsmith-checkout-content-wrapper .goldsmith-justify-center {
+	text-align: left;
+}
+
+.goldsmith-page-multistep-checkout .woocommerce-form-coupon-toggle {
+    margin-bottom: 30px;
+}
+
+.goldsmith-page-multistep-checkout .create-account {
+    margin-top: 25px;
+}
+
+.goldsmith-page-multistep-checkout .woocommerce-form.woocommerce-form-login.login,
+.goldsmith-page-multistep-checkout .woocommerce-form-register {
+    max-width: 100%;
+}
+
+.goldsmith-checkout-content-wrapper .goldsmith-woocommerce-form-coupon-wrapper {
+	padding: 30px;
+	margin-bottom: 30px;
+	border: 2px solid var(--goldsmith-gray);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.goldsmith-checkout-content-wrapper .goldsmith-checkout-button-wrapper {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.goldsmith-checkout-content-wrapper .goldsmith-coupon-code-wrapper {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.goldsmith-checkout-content-wrapper .goldsmith-coupon-code-actions {
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.goldsmith-coupon-code-wrapper input#coupon_code {
+	margin-right: 10px;
+}
+
+.goldsmith-woocommerce-form-coupon-wrapper .woocommerce-error {
+	flex: 0 0 100%;
+	list-style: none;
+}
+
+.goldsmith-checkout-content-wrapper .goldsmith-checkout-labels {
+	margin-bottom: 40px;
+}
+
+.goldsmith-checkout-content-wrapper .goldsmith-checkout-labels-inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.goldsmith-checkout-content-wrapper .swiper-pagination-bullets {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid var(--goldsmith-gray);
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 46px;
+    align-content: space-around;
+    width: 100%;
+    margin-top: 0;
+}
+
+.goldsmith-checkout-content-wrapper .goldsmith-step-item {
+	padding: 0px 10px 0px 0px;
+	border: 0;
+	color: var(--goldsmith-dark);
+	font-size: 14px;
+	line-height: 1;
+	margin: 0;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.goldsmith-checkout-content-wrapper .goldsmith-step-item+.goldsmith-step-item {
+	margin-left: 10px;
+}
+
+.goldsmith-checkout-content-wrapper .goldsmith-step {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.goldsmith-checkout-content-wrapper .lost_password {
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.goldsmith-checkout-content-wrapper form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row:last-child {
+	margin-bottom: 0;
+}
+
+.goldsmith-checkout-form-login .goldsmith-inner-steps-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.goldsmith-checkout-form-login .goldsmith-inner-steps-buttons>span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 10px;
+	cursor: pointer;
+	padding: 5px 15px;
+	background-color: var(--goldsmith-gray);
+	color: var(--goldsmith-dark);
+}
+
+.goldsmith-checkout-form-login .goldsmith-inner-steps-buttons>span[tabindex="-1"] {
+	background-color: var(--goldsmith-dark);
+	color: #fff;
+}
+
+.goldsmith-checkout-form-login .goldsmith-inner-steps-buttons>span[tabindex="-1"] svg {
+	fill: #fff;
+}
+
+.goldsmith-checkout-form-login .goldsmith-inner-steps-buttons svg {
+	max-width: 18px;
+	max-height: 18px;
+	margin-right: 5px;
+}
+
+.goldsmith-checkout-content-wrapper .woocommerce-checkout-review-order-table {
+	width: 100%;
+}
+
+.goldsmith-checkout-content-wrapper .woocommerce-form-login__submit {
+	margin-top: 10px;
+}
+
+.goldsmith-lost-reset-password-wrapper .goldsmith-flex {
+	flex-direction: column;
+}
+
+.goldsmith-checkout-review-order-table .goldsmith-cart-items,
+.goldsmith-checkout-review-order-table .goldsmith-checkout-review-order-footer {
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.goldsmith-checkout-review-order-table .goldsmith-cart-item,
+.goldsmith-checkout-review-order-table .goldsmith-checkout-footer-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.goldsmith-checkout-review-order-table .goldsmith-checkout-review-order-footer #shipping_method {
+    margin: 0;
+    list-style: none;
+}
+
+.goldsmith-checkout-review-order-table .goldsmith-checkout-review-order-footer {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid var(--goldsmith-gray);
+}
+
+.goldsmith-checkout-review-order-table .goldsmith-cart-items {
+	margin-top: -10px;
+}
+
+.goldsmith-checkout-footer-item.order-total,
+.goldsmith-checkout-review-order-table .goldsmith-cart-item {
+	padding-top: 10px;
+	margin-top: 10px;
+	border-top: 1px solid var(--goldsmith-gray);
+}
+
+.goldsmith-checkout-footer-item.order-total {
+	text-transform: uppercase;
+	color: var(--goldsmith-dark);
+	/* margin-bottom: 20px; */
+}
+
+.goldsmith-checkout-review-order-table .goldsmith-cart-item .goldsmith-product-name {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.goldsmith-checkout-review-order-table .goldsmith-cart-item .product-name,
+.goldsmith-checkout-review-order-table .goldsmith-cart-item .product-img {
+	margin-right: 10px;
+}
+
+@media(max-width:576px) {
+    .goldsmith-checkout-content-wrapper .woocommerce-form.woocommerce-form-login.login,
+    .goldsmith-checkout-content-wrapper .woocommerce-form-register,
+    .goldsmith-checkout-content-wrapper .checkout_coupon.woocommerce-form-coupon,
+    .goldsmith-page-multistep-checkout .checkout.woocommerce-checkout {
+        margin-top: 0;
+    }
+    .goldsmith-checkout-content-wrapper .swiper-pagination-bullets {
+        text-align: left;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .goldsmith-checkout-content-wrapper .goldsmith-step-item {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px 0;
+    }
+
+	.goldsmith-checkout-content-wrapper .goldsmith-step-item+.goldsmith-step-item {
+		margin: 0;
+		border-top: 1px solid var(--goldsmith-gray);
+	}
+    .goldsmith-checkout-button-next.button,
+    .goldsmith-checkout-button-prev.button {
+        min-width: 140px;
+    }
+
+}
+
+.woocommerce-form-register .woocommerce-privacy-policy-text {
+    margin-bottom: 20px;
+}
+
+.woocommerce-privacy-policy-text p {
+	font-size: 12px;
+	margin: 15px 0 24px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--goldsmith-gray);
+	padding: 15px;
+}
+
+.goldsmith-default-type .woocommerce-privacy-policy-text p {
+	margin-top: 0;
+}
+
+.goldsmith-default-type span.password-input {
+	width: 100%;
+}
+
+.goldsmith-checkout-review-order-table .goldsmith-checkout-footer-item strong {
+	color: var(--goldsmith-dark);
+}
+
+.checkout.woocommerce-checkout {
+	margin-top: 20px;
+}
+
+.goldsmith-page-multistep-checkout .checkout.woocommerce-checkout {
+    margin-top: 0;
+}
+
+
+.select2-container .select2-dropdown {
+	border: 1px solid var(--goldsmith-gray);
+	border-radius: 0;
+}
+
+.select2-container.select2-container--default .select2-results>.select2-results__options {
+	max-height: 250px;
+}
+
+.select2-container.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container.select2-container--default .select2-results__option--highlighted[data-selected] {
+	background-color: var(--goldsmith-dark);
+	color: #fff;
+}
+
+.select2-container.select2-container--default .select2-results__option {
+	padding: 4px 20px;
+}
+
+.select2-container.select2-container--default .select2-selection--single {
+	background-color: #fff;
+	border-radius: 0;
+	padding: 12px 30px 12px 15px;
+	min-height: 48px;
+	height: auto;
+	border: 1px solid var(--goldsmith-gray);
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.select2-container.select2-container--default .select2-selection--single .select2-selection__rendered {
+	padding: 0px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: var(--goldsmith-dark-soft);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 1;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 100%;
+	position: absolute;
+	top: auto;
+	right: 0;
+	width: 30px;
+}

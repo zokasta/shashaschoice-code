@@ -1,0 +1,279 @@
+/* CHECKOUT POPUP MULTISTEPS */
+.goldsmith-elementor-header-mobile-menu.goldsmith-scrollbar>.elementor-container,
+.goldsmith-scrollbar {
+    overflow-y: auto;
+    scrollbar-color: var(--goldsmith-gray) var(--goldsmith-dark);
+    scrollbar-width: thin;
+}
+.goldsmith-elementor-header-mobile-menu.goldsmith-scrollbar>.elementor-container::-webkit-scrollbar,
+.goldsmith-scrollbar::-webkit-scrollbar {
+    width: 2px;
+}
+.goldsmith-elementor-header-mobile-menu.goldsmith-scrollbar>.elementor-container::-webkit-scrollbar-thumb,
+.goldsmith-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--goldsmith-dark);
+}
+.goldsmith-elementor-header-mobile-menu.goldsmith-scrollbar>.elementor-container::-webkit-scrollbar-track,
+.goldsmith-scrollbar::-webkit-scrollbar-track {
+    background-color: var(--goldsmith-gray);
+}
+.goldsmith-ajax-checkout-popup-wrapper.active,
+.goldsmith-ajax-checkout-popup-wrapper.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goldsmith-ajax-checkout-popup-wrapper.active .goldsmith-ajax-checkout-popup-overlay,
+.goldsmith-ajax-checkout-popup-wrapper.loading .goldsmith-ajax-checkout-popup-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-ajax-checkout-popup-inner {
+    z-index: 1;
+}
+.goldsmith-ajax-checkout-popup-wrapper.loading .loading-wrapper {
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.goldsmith-ajax-checkout-popup-wrapper.active .loading-wrapper {
+    display: none;
+}
+.goldsmith-ajax-checkout-popup-inner {
+    max-width: 800px;
+    padding: 30px;
+    background-color: var(--goldsmith-light);
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+    max-height: calc(100vh - 100px);
+    border-radius: 4px;
+}
+.select2-dropdown {
+    z-index: 9999999;
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-panel-checkout-labels {
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    position: relative;
+    background: var(--goldsmith-warning-bg);
+    flex-direction: row;
+    line-height: 1;
+    color: var(--goldsmith-warning);
+    cursor: pointer;
+    z-index: 4;
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-step .goldsmith-step-triangle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--goldsmith-warning-border);
+    border-left: 0;
+    border-bottom: 0;
+    background-color: var(--goldsmith-warning-bg);
+    top: 5px;
+    right: -20px;
+    z-index: 0;
+    transform: rotate(45deg);
+}
+
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-step-item:nth-child(2) {
+    z-index: 3;
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-step-item:nth-child(3) {
+    z-index: 2;
+}
+
+.goldsmith-ajax-checkout-popup-wrapper .swiper-slide-thumb-active .goldsmith-step {
+    background: var(--goldsmith-success-bg);
+    color: var(--goldsmith-success);
+}
+.goldsmith-ajax-checkout-popup-wrapper .swiper-slide-thumb-active .goldsmith-step-triangle {
+    border-color: var(--goldsmith-success-border);
+    background-color: var(--goldsmith-success-bg);
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-checkout-popup-steps .swiper-slide.has-error .goldsmith-step,
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-checkout-popup-steps .swiper-slide.has-error .goldsmith-step-triangle {
+    background-color: var(--goldsmith-red-bg);
+    color: var(--goldsmith-red);
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-checkout-popup-steps .swiper-slide.step-success .goldsmith-step,
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-checkout-popup-steps .swiper-slide.step-success .goldsmith-step,
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-checkout-popup-steps .swiper-slide.step-success .goldsmith-step-triangle {
+    background-color: var(--goldsmith-success-bg);
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-step-number {
+    margin-right: 10px;
+    font-size: 12px;
+    background: var(--goldsmith-warning-border);
+    color: var(--goldsmith-warning);
+    padding: 5px;
+    border-radius: 30px;
+    min-width: 25px;
+    min-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goldsmith-ajax-checkout-popup-wrapper .swiper-slide-thumb-active .goldsmith-step-number {
+    background: var(--goldsmith-success-border);
+    color: var(--goldsmith-success);
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-checkout-popup-steps .swiper-slide.has-error .goldsmith-step-number {
+    background-color: var(--goldsmith-red-border);
+    color: var(--goldsmith-red);
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-checkout-popup-steps .swiper-slide.has-error .goldsmith-step-triangle {
+    border-color: var(--goldsmith-red-border);
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-checkout-popup-steps .swiper-slide.step-success .goldsmith-step-number {
+    background-color: var(--goldsmith-success-border);
+    color: var(--goldsmith-success);
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-checkout-popup-steps .swiper-slide.step-success .goldsmith-step-triangle {
+    border-color: var(--goldsmith-success-border);
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-checkout-popup-steps .swiper-slide.step-success .goldsmith-step {
+    color: var(--goldsmith-success);
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-step-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.goldsmith-ajax-checkout-popup-wrapper .checkout_coupon.woocommerce-form-coupon,
+.goldsmith-ajax-checkout-popup-wrapper .woocommerce-form-login-toggle,
+.goldsmith-ajax-checkout-popup-wrapper .woocommerce-form-coupon-toggle {
+    max-width: 100%;
+    text-align: center;
+}
+.goldsmith-ajax-checkout-popup-wrapper .woocommerce-form-coupon-toggle {
+    border-radius: 4px;
+}
+
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-woocommerce-checkout-coupon form .form-row.goldsmith-coupon-row {
+    justify-content: center;
+}
+
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-panel-checkout-form-wrapper {
+    height: calc(100vh - 240px);
+    padding-right: 15px;
+    margin-right: -15px;
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-panel-close-button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 4;
+}
+.goldsmith-ajax-checkout-popup-wrapper .woocommerce-NoticeGroup.woocommerce-NoticeGroup-checkout .woocommerce-error {
+    max-width: 100%;
+    margin-right: 0;
+    border-radius: 4px;
+}
+.goldsmith-ajax-checkout-popup-wrapper .goldsmith-woocommerce-checkout-coupon .woocommerce-error {
+    color: var(--goldsmith-red);
+    text-align: center;
+}
+.goldsmith-ajax-checkout-popup-wrapper .validate-required.woocommerce-invalid input,
+.goldsmith-ajax-checkout-popup-wrapper .validate-required.woocommerce-invalid input[type='checkbox']:not(:checked):after,
+.goldsmith-ajax-checkout-popup-wrapper .validate-required.woocommerce-invalid .select2-container.select2-container--default .select2-selection--single{
+    border-color: var(--goldsmith-red-border);
+}
+.goldsmith-ajax-checkout-popup-wrapper .validate-required.woocommerce-invalid input[type='checkbox']:not(:checked) + .woocommerce-terms-and-conditions-checkbox-text{
+    color: var(--goldsmith-red-color);
+}
+.goldsmith-checkout-popup-main .swiper-wrapper.height-auto{
+    height: auto!important;
+}
+.goldsmith-ajax-checkout-popup-wrapper .show-field {
+    font-size: 10px;
+    padding: 3px 10px;
+    background: var(--goldsmith-dark);
+    color: var(--goldsmith-light);
+    border-radius: 10px;
+    line-height: 1;
+    cursor: pointer;
+    display: inline-block;
+}
+.goldsmith-ajax-checkout-popup-wrapper .show-field:hover {
+    opacity: 0.5;
+}
+.goldsmith-ajax-checkout-popup-inner .woocommerce-NoticeGroup.woocommerce-NoticeGroup-checkout .woocommerce-error {
+    background-color: var(--goldsmith-red-bg);
+    border: 1px solid var(--goldsmith-red-border);
+    color: var(--goldsmith-red-color);
+}
+.goldsmith-ajax-checkout-popup-inner .woocommerce-error strong {
+    color: var(--goldsmith-dark);
+}
+@media(max-width:768px){
+    .goldsmith-ajax-checkout-popup-inner {
+        max-width: calc(100vw - 40px);
+    }
+}
+@media(max-width:576px){
+    .goldsmith-ajax-checkout-popup-wrapper .goldsmith-panel-checkout-form-wrapper {
+        height: calc(100vh - 340px);
+    }
+    .goldsmith-ajax-checkout-popup-wrapper .goldsmith-panel-checkout-labels {
+        border-radius: 4px;
+    }
+    .goldsmith-ajax-checkout-popup-wrapper .goldsmith-panel-checkout-labels .swiper-slide {
+        height: 50px!important;
+    }
+    .goldsmith-ajax-checkout-popup-wrapper .goldsmith-step .goldsmith-step-triangle {
+        width: 25px;
+        height: 26px;
+        top: 5px;
+        right: -12px;
+        border: 0;
+        display:none;
+    }
+    .goldsmith-ajax-checkout-popup-wrapper .goldsmith-step {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        padding-left: 15px;
+        border-radius: 4px;
+    }
+    .goldsmith-ajax-checkout-popup-wrapper .goldsmith-step-number {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+    .goldsmith-ajax-checkout-popup-wrapper .goldsmith-panel-close-button {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        z-index: 4;
+    }
+    .goldsmith-ajax-checkout-popup-wrapper .woocommerce-terms-and-conditions-checkbox-text {
+        line-height: 1.6;
+    }
+    .goldsmith-ajax-checkout-popup-wrapper .woocommerce-NoticeGroup.woocommerce-NoticeGroup-checkout .woocommerce-error {
+        padding-top: 30px;
+    }
+    .goldsmith-ajax-checkout-popup-wrapper .woocommerce-error .close-error {
+        top: 0;
+    }
+}
+/* CHECKOUT POPUP MULTISTEPS */

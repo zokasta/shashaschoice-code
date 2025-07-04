@@ -1,0 +1,56 @@
+/* PAGINATION */
+.goldsmith-woocommerce-pagination {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.goldsmith-woocommerce-pagination ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+	margin-bottom: -10px;
+	padding: 0;
+}
+
+.goldsmith-woocommerce-pagination ul.page-numbers li {
+	display: inline-block;
+	margin-bottom: 10px;
+	border: 0;
+}
+
+.goldsmith-woocommerce-pagination ul.page-numbers li+li {
+	margin-right: 10px;
+}
+
+.goldsmith-woocommerce-pagination ul li a,
+.goldsmith-woocommerce-pagination ul li span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: var(--goldsmith-dark);
+	background-color: var(--goldsmith-gray-soft);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 50px;
+	border-radius: 4px;
+}
+
+.goldsmith-woocommerce-pagination ul li a:focus,
+.goldsmith-woocommerce-pagination ul li a:hover,
+.goldsmith-woocommerce-pagination ul li span.current {
+	color: var(--goldsmith-light);
+	background-color: var(--goldsmith-dark);
+}
+/* PAGINATION */

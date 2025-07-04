@@ -1,0 +1,140 @@
+/*
+* Cart free shipping calculator progressbar
+*/
+
+.goldsmith-free-shipping-progress .goldsmith-progress-bar-wrap {
+    position: relative;
+    height: 6px;
+    margin: 0 13px;
+}
+
+.goldsmith-free-shipping-progress .goldsmith-progress-bar-wrap:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -13px;
+    right: -13px;
+    height: 100%;
+    border-radius: var(--goldsmith-border-radius);
+    background: var(--goldsmith-gray);
+}
+
+.goldsmith-free-shipping-progress .goldsmith-progress-bar:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -13px;
+    right: -13px;
+    height: 100%;
+    border-radius: var(--goldsmith-border-radius);
+    background: var(--goldsmith-yellow);
+}
+
+.goldsmith-free-shipping-progress .goldsmith-progress-bar {
+    position: relative;
+    border-radius: inherit;
+    height: 100%;
+    max-width: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.goldsmith-free-shipping-progress .goldsmith-progress-value {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(50%,-50%);
+    -ms-transform: translate(50%,-50%);
+    transform: translate(50%,-50%);
+    background: #fff;
+    border: 1px solid var(--goldsmith-yellow);
+    border-radius: 50%;
+    font-size: 12px;
+    width: 26px;
+    height: 26px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.goldsmith-free-shipping-progress .goldsmith-progress-value svg {
+    width: 17px;
+    height: 17px;
+}
+
+.goldsmith-free-shipping-progress .goldsmith-progress-value svg * {
+    fill: var(--goldsmith-yellow);
+}
+
+.free-shipping-success .goldsmith-progress-bar:before {
+    background: var(--goldsmith-success);
+}
+
+.free-shipping-success .goldsmith-progress-value svg * {
+    fill: var(--goldsmith-success);
+}
+
+.free-shipping-success .goldsmith-progress-value{
+    border-color: var(--goldsmith-success);
+}
+
+.goldsmith-cart-goal-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--goldsmith-dark);
+}
+
+.shakeY {
+    -webkit-animation-name: shakeY;
+    animation-name: shakeY;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+@-webkit-keyframes shakeY{
+	0%,
+	to{
+		-webkit-transform:translateZ(0);
+		transform:translateZ(0)
+	}
+	10%,30%,50%,70%,90%{
+		-webkit-transform:translate3d(0,-10px,0);
+		transform:translate3d(0,-10px,0)
+	}
+	20%,40%,60%,80%{
+		-webkit-transform:translate3d(0,10px,0);
+		transform:translate3d(0,10px,0)
+	}
+}
+
+@keyframes shakeY{
+	0%,
+	to{
+		-webkit-transform:translateZ(0);
+		transform:translateZ(0)
+	}
+	10%,30%,50%,70%,90%{
+		-webkit-transform:translate3d(0,-10px,0);
+		transform:translate3d(0,-10px,0)
+	}
+	20%,40%,60%,80%{
+		-webkit-transform:translate3d(0,10px,0);
+		transform:translate3d(0,10px,0)
+	}
+}
+/* Cart free shipping calculator progressbar */

@@ -1,0 +1,165 @@
+/* shop hero category type */
+.page-hero-big {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 350px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.goldsmith-page-hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.has-default-header-type-trans .page-hero-big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.has-default-header-type-trans .page-hero-cat-slider {
+    min-height: 450px;
+    padding-top: 120px;
+}
+
+.page-hero-big ul.goldsmith-wc-category-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	margin-top: 15px;
+}
+
+.goldsmith-shop-hero.page-hero-big .term-description,
+.goldsmith-shop-hero.page-hero-big .goldsmith-breadcrumbs {
+    margin-top: 15px;
+}
+
+.goldsmith-shop-hero.has-bg-image .goldsmith-breadcrumbs li,
+.goldsmith-shop-hero.has-bg-image .goldsmith-breadcrumbs li a,
+.goldsmith-shop-hero.has-bg-image .term-description,
+.goldsmith-shop-hero.has-bg-image .page-title{
+    color: #fff;
+}
+
+.goldsmith-shop-hero.has-bg-image .page-title{
+    margin-bottom: 0;
+}
+
+.page-hero-big ul.goldsmith-wc-category-list li {
+	display: inline-block;
+	position: relative;
+}
+
+.page-hero-big ul.goldsmith-wc-category-list li+li {
+	margin-right: 20px;
+}
+
+.page-hero-big ul.goldsmith-wc-category-list li a {
+	padding: 10px 0;
+}
+
+.page-hero-big ul.goldsmith-wc-category-list li a:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	background-color: currentColor;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	-webkit-transition: width .25s;
+	transition: width .25s;
+}
+
+.page-hero-big ul.goldsmith-wc-category-list li a:hover:after {
+	width: 100%;
+}
+/* shop hero category type */
+
+
+/* shop hero category slider type */
+.goldsmith-shop-hero.goldsmith-page-hero.page-hero-cat-slider.page-hero-static {
+	background-position: center;
+	background-size: cover;
+	min-height: 330px;
+	background-color: var(--goldsmith-gray-soft);
+	display: flex;
+	align-items: flex-start;
+	padding: 90px 0;
+	align-content: center;
+}
+
+.has-default-header-type-trans .goldsmith-shop-hero.goldsmith-page-hero.page-hero-cat-slider.page-hero-static {
+	min-height: 450px;
+}
+
+.goldsmith-category-slider.goldsmith-swiper-slider {
+	max-width: 100%;
+}
+
+.goldsmith-category-slider {
+	margin-bottom: -140px;
+	margin-top: 25px;
+}
+.goldsmith-shop-hero.goldsmith-page-hero.page-hero-cat-slider .goldsmith-category-slider {
+	margin-bottom: 0px;
+}
+
+.goldsmith-category-slider .swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 200ms linear;
+	transform: scale(0.9);
+}
+
+.goldsmith-category-slider .goldsmith-category-slide-item a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	padding: 10px 10px 0;
+	background: #f4f4f4;
+}
+
+.goldsmith-category-slider span.category-title {
+	color: var(--goldsmith-dark);
+	line-height: 1;
+	margin-top: 0;
+	padding: 10px;
+}
+
+.goldsmith-category-slider span.cat-count {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	left: auto;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: var(--goldsmith-dark);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+}
+
+.goldsmith-category-slider .swiper-pagination {
+	position: relative;
+	right: auto;
+	left: auto;
+	bottom: auto;
+	margin-top: 20px;
+}
+/* shop hero category slider type */

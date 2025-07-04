@@ -1,0 +1,137 @@
+/* shop loop filter */
+.goldsmith-products-wrapper {
+	position: relative;
+}
+
+.goldsmith-before-loop {
+	margin-bottom: 30px;
+}
+
+.goldsmith-shop-filter-area {
+	display: flex;
+	align-items: center;
+}
+
+.goldsmith-filter-action {
+	display: flex;
+	align-items: center;
+}
+
+.goldsmith-toggle-hidden-sidebar svg,
+.goldsmith-open-fixed-sidebar svg,
+.goldsmith-filter-action svg {
+	max-width: 20px;
+	max-height: 20px;
+}
+
+.goldsmith-before-loop .goldsmith-block-right>div,
+.goldsmith-before-loop .goldsmith-block-left>div {
+	display: inline-flex;
+	align-items: center;
+}
+
+.goldsmith-before-loop .goldsmith-block-left>div+div,
+.goldsmith-before-loop .goldsmith-block-right>div+div {
+	margin-left: 2px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.goldsmith-before-loop .goldsmith-block-left>div:not(:last-child):before,
+.goldsmith-before-loop .goldsmith-block-right>div:not(:last-child):before {
+	content: "";
+	width: 1px;
+	height: 91%;
+	border-radius: 3px;
+	position: absolute;
+	right: 0px;
+}
+
+.goldsmith-filter-action li:not(:first-child) {
+	margin-left: 10px;
+}
+
+.goldsmith-toggle-hidden-sidebar,
+.goldsmith-open-fixed-sidebar,
+.goldsmith-filter-column-select ul li svg,
+.goldsmith-shop-filter-area ul li a,
+.goldsmith-shop-filter-area li a svg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: var(--goldsmith-gray-dark);
+	color: var(--goldsmith-gray-dark);
+}
+
+.goldsmith-filter-column-select li.active svg,
+.goldsmith-shop-filter-area li.active a:hover svg,
+.goldsmith-shop-filter-area ul li.active a,
+.goldsmith-shop-filter-area li.active a svg {
+	fill: var(--goldsmith-dark);
+	color: var(--goldsmith-dark);
+}
+
+.shop-layout-full-width .goldsmith-open-fixed-sidebar {
+	display: none;
+}
+
+.woocommerce-order .row {
+    display: flex;
+    justify-content: center;
+}
+
+.woocommerce .goldsmith-shop-filter-ordering .woocommerce-ordering {
+	margin: 0px;
+}
+
+.woocommerce .goldsmith-shop-filter-ordering select.orderby {
+	border: 0;
+	height: auto;
+	padding-left: 0;
+	line-height: 30px;
+}
+
+.goldsmith-woo-result-count .woocommerce-result-count {
+	margin: 0;
+}
+
+.goldsmith-shop-filter-area ul {
+	list-style: none;
+}
+
+.goldsmith-shop-filter-area .nice-select.orderby {
+	border: 0;
+	height: auto;
+	padding-left: 0;
+	line-height: 30px;
+}
+
+@media (min-width: 992px) {
+    .shop-layout-top-sidebar .goldsmith-shop-filter-top-area .goldsmith-open-fixed-sidebar,
+    .shop-layout-right-sidebar .goldsmith-shop-filter-top-area .goldsmith-open-fixed-sidebar,
+	.shop-layout-left-sidebar .goldsmith-shop-filter-top-area .goldsmith-open-fixed-sidebar {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.goldsmith-before-loop.goldsmith-inline-two-block {
+		flex-wrap: nowrap;
+	}
+
+	.goldsmith-shop-filter-top-area>div>.goldsmith-filter-per-page-area,
+	.goldsmith-shop-filter-top-area>div>.goldsmith-filter-column-select-area {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.goldsmith-filter-action li:not(:last-child) {
+		margin-right: 6px;
+	}
+
+	.goldsmith-before-loop.goldsmith-inline-two-block .goldsmith-woo-result-count {
+		display: none;
+	}
+}
+/* shop loop filter */

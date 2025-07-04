@@ -1,0 +1,388 @@
+/*
+* quick view
+*/
+
+.goldsmith-mfp-slide-bottom button.mfp-close,
+.goldsmith-mfp-slide-bottom button.mfp-arrow,
+.mfp-goldsmith-quickview button.mfp-close,
+.mfp-goldsmith-quickview button.mfp-arrow {
+	overflow: visible;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	-webkit-appearance: none;
+	display: block;
+	outline: none;
+	padding: 0;
+	z-index: 1046;
+	box-shadow: none;
+	touch-action: manipulation;
+}
+
+.mfp-goldsmith-quickview .goldsmith-panel-close-button {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.mfp-goldsmith-quickview .goldsmith-panel-close-button:hover {
+	background-color: var(--goldsmith-bg-soft);
+}
+
+.goldsmith-quickview-wrapper {
+    background: #fff;
+    padding: 60px;
+    max-width: 920px;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px rgb(116 116 116 / 22%);
+}
+
+.goldsmith-quickview-wrapper .goldsmith-swiper-slider-wrapper {
+    overflow: hidden;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-quickview-thumbnails {
+	margin-top: 10px;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-product-attributes {
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--goldsmith-gray);
+}
+
+.goldsmith-quickview-wrapper .goldsmith-attr-label {
+	text-transform: capitalize;
+	margin-right: 5px;
+	font-weight: 500;
+	color: var(--goldsmith-dark);
+}
+
+.goldsmith-quickview-wrapper .goldsmith-attr-item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-right: 15px;
+}
+
+.goldsmith-quickview-wrapper .product_meta>span a,
+.goldsmith-quickview-wrapper .goldsmith-attr-value,
+.goldsmith-quickview-wrapper .goldsmith-attr-value a {
+	color: var(--goldsmith-dark);
+}
+
+.goldsmith-quickview-wrapper .product_meta>span a:hover,
+.goldsmith-quickview-wrapper .goldsmith-attr-value a:hover {
+	color: var(--goldsmith-gray);
+}
+
+.goldsmith-quickview-wrapper .goldsmith-title-rating {
+	margin-bottom: 5px;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-product-title {
+	margin-bottom: 0px;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-summary-item p:first-child {
+    margin-top: 0;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-summary-item p:last-child {
+    margin-bottom: 0;
+}
+.goldsmith-quickview-wrapper .goldsmith-summary-item.goldsmith-price p.stock.goldsmith-stock-status {
+    line-height: 1;
+}
+.goldsmith-quickview-wrapper .goldsmith-product-info-bottom,
+.goldsmith-quickview-wrapper .product-after-cart-wrapper,
+.goldsmith-quickview-wrapper .goldsmith-selected-variations-terms-wrapper:not(.active),
+.goldsmith-quickview-wrapper .wc-forward {
+    display: none;
+}
+.goldsmith-quickview-wrapper .wc-forward {
+    display: none!important;
+}
+.goldsmith-quickview-wrapper .goldsmith-selected-variations-terms-wrapper.active {
+    margin-bottom: 15px;
+}
+.goldsmith-quickview-wrapper .goldsmith-btn.single_add_to_cart_button {
+    min-width: auto;
+    flex: 1;
+}
+.goldsmith-quickview-wrapper .quantity {
+    flex: 1;
+}
+.goldsmith-quickview-wrapper .goldsmith-row-summary .goldsmith-product-labels,
+.goldsmith-quickview-wrapper .goldsmith-swiper-slider-wrapper .goldsmith-product-labels {
+    z-index: 5;
+    position: absolute;
+    flex-direction: column;
+    gap: 5px;
+    left: 15px;
+    top: 15px;
+}
+.goldsmith-quickview-wrapper .product_meta>span {
+	display: block;
+}
+.goldsmith-quickview-wrapper .goldsmith-product-info-top .grouped-list-wrapper ul {
+    padding: 0;
+}
+.goldsmith-quickview-wrapper .woocommerce-grouped-product-list .woocommerce-grouped-product-list-items li {
+    padding: 0;
+}
+.goldsmith-quickview-wrapper .goldsmith-after-cart-grouped-button-wrapper {
+    margin: 0;
+}
+.goldsmith-quickview-wrapper .goldsmith-after-cart-grouped-button-wrapper .goldsmith-btn.single_add_to_cart_button {
+    width: 100%;
+    flex: 0 0 100%;
+}
+.goldsmith-quickview-wrapper .grouped-list-wrapper ul li {
+    list-style: none;
+}
+.goldsmith-quickview-wrapper .product_meta {
+	margin-top: 15px;
+}
+
+.goldsmith-quickview-wrapper .product_meta .sku_wrapper {
+	display: none;
+}
+
+.goldsmith-quickview-wrapper .product_meta .sku_wrapper {
+	display: none;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-viewed-offer-time {
+	margin-top: 15px;
+}
+
+.woocommerce div.goldsmith-quickview-wrapper form.cart .variations {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 0;
+}
+
+.goldsmith-quickview-wrapper .variations span.label {
+	min-width: 40px;
+}
+
+div.goldsmith-quickview-wrapper .goldsmith-variations.variations + .goldsmith-product-info {
+    margin-top: 0;
+}
+
+.goldsmith-quickview-wrapper ul.goldsmith-product-features-list+form {
+	margin-top: 30px;
+}
+
+.goldsmith-quickview-wrapper .variations-items {
+	display: flex;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-swiper-slider-wrapper .swiper-slide {
+	text-align: center;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-quickview-product-details ul, .goldsmith-quickview-wrapper .goldsmith-product-summary ul.goldsmith-product-features-list {
+	list-style: disc;
+	padding-left: 20px;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-quickview-product-details ul.goldsmith-attr-list {
+	padding: 0 !important;
+	margin-bottom: 20px;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-summary-item.goldsmith-product-meta {
+	display: flex;
+	flex-direction: column;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-btn-small {
+	color: #fff;
+	border-color: var(--goldsmith-dark);
+	background-color: var(--goldsmith-dark);
+	height: 38px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 0 15px;
+	min-width: 160px;
+	text-transform: capitalize;
+	letter-spacing: 0.3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	cursor: pointer;
+	border: 0;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-summary-item+.goldsmith-summary-item {
+	margin-top: 20px;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-summary-item.template-add-to-cart {
+	display: inline-block;
+}
+
+.goldsmith-quickview-wrapper .swiper-button-prev,
+.goldsmith-quickview-wrapper .swiper-button-next {
+	background-image: none;
+	color: var(--goldsmith-dark-soft);
+}
+
+.goldsmith-quickview-wrapper .swiper-button-prev:after,
+.goldsmith-quickview-wrapper .swiper-button-next:after {
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-swiper-thumbnails img {
+	cursor: pointer;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-swiper-thumbnails .swiper-slide-thumb-active img {
+	border: 1px solid var(--goldsmith-gray);
+}
+
+.goldsmith-quickview-thumbnails .swiper-slide {
+	max-width: 60px;
+}
+
+.goldsmith-product-summary .goldsmith-summary-item.goldsmith-price {
+	margin-top: 15px;
+}
+
+.goldsmith-quickview-product-details.goldsmith-product-summary .goldsmith-summary-item.goldsmith-price span+p.stock.goldsmith-stock-status {
+	position: relative;
+	margin: 20px 0 0 10px;
+	top: -4px;
+}
+
+.goldsmith-quickview-wrapper .goldsmith-swiper-slider-wrapper .swiper-slide {
+	text-align: left;
+}
+
+@media(min-width:1024px) {
+
+	.goldsmith-quickview-wrapper .swiper-button-prev,
+	.goldsmith-quickview-wrapper .swiper-button-next {
+		opacity: 0;
+		-moz-transition: -moz-transform ease 0.25s, opacity ease 0.25s;
+		-webkit-transition: -webkit-transform ease 0.25s, opacity ease 0.25s;
+		-o-transition: -o-transform ease 0.25s, opacity ease 0.25s;
+		-ms-transition: -ms-transform ease 0.25s, opacity ease 0.25s;
+		transition: transform ease 0.25s, opacity ease 0.25s;
+	}
+
+	.goldsmith-quickview-wrapper .swiper-button-next,
+	.goldsmith-quickview-wrapper .swiper-container-rtl .swiper-button-prev {
+		right: 0px;
+		transform: translateX(30px);
+	}
+
+	.goldsmith-quickview-wrapper .swiper-button-prev,
+	.goldsmith-quickview-wrapper .swiper-container-rtl .swiper-button-next {
+		left: 0px;
+		transform: translateX(-30px);
+	}
+
+	.goldsmith-quickview-wrapper .goldsmith-swiper-slider-wrapper:hover .swiper-button-prev,
+	.goldsmith-quickview-wrapper .goldsmith-swiper-slider-wrapper:hover .swiper-button-next {
+		opacity: 1;
+	}
+
+	.goldsmith-quickview-wrapper .goldsmith-swiper-slider-wrapper:hover .swiper-button-next,
+	.goldsmith-quickview-wrapper .goldsmith-swiper-slider-wrapper:hover .swiper-container-rtl .swiper-button-prev {
+		right: 0px;
+		transform: translateX(-10px);
+	}
+
+	.goldsmith-quickview-wrapper .goldsmith-swiper-slider-wrapper:hover .swiper-button-prev,
+	.goldsmith-quickview-wrapper .goldsmith-swiper-slider-wrapper:hover .swiper-container-rtl .swiper-button-next {
+		left: 0px;
+		transform: translateX(10px);
+	}
+}
+
+@media(max-width:992px) {
+	.goldsmith-quickview-wrapper .goldsmith-quickview-product-details {
+		margin-top: 40px;
+	}
+}
+
+@media(max-width:768px) {
+	.admin-bar .mfp-wrap.mfp-goldsmith-quickview {
+		top: 46px;
+	}
+
+	.admin-bar .goldsmith-quickview-wrapper {
+		padding-bottom: 86px;
+	}
+
+	.goldsmith-quickview-wrapper {
+		max-width: 560px;
+	}
+}
+
+@media(max-width:576px) {
+	.goldsmith-quickview-wrapper .single_variation_wrap .goldsmith-btn {
+		min-width: 140px;
+	}
+}
+
+@media(max-width:480px) {
+	.mfp-arrow {
+		-webkit-transform: scale(0.55);
+		transform: scale(0.55);
+	}
+
+	.goldsmith-quickview-wrapper {
+		padding: 20px;
+		padding-bottom: 86px;
+	}
+
+	.goldsmith-quickview-wrapper .goldsmith-product-attributes,
+	.goldsmith-quickview-wrapper .goldsmith-attr-list,
+	.goldsmith-quickview-wrapper .goldsmith-attr-item {
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.goldsmith-quickview-wrapper .goldsmith-attr-item {
+		margin-right: 0;
+		flex-direction: row;
+	}
+
+	.goldsmith-quickview-wrapper .goldsmith-btn {
+		margin-top: 5px;
+		display: inline-flex;
+	}
+
+	.goldsmith-quickview-wrapper div.product form.cart div.quantity,
+	.woocommerce .goldsmith-quickview-wrapper div.product form.cart div.quantity {
+		margin-right: 0;
+		width: 100%;
+		max-width: 100%;
+		float: none;
+	}
+
+	.goldsmith-quickview-wrapper .swiper-button-prev:after,
+	.goldsmith-quickview-wrapper .swiper-button-next:after {
+		font-size: 24px;
+	}
+
+	.mfp-goldsmith-quickview .goldsmith-panel-close-button {
+		top: 10px;
+		right: 0;
+	}
+}
