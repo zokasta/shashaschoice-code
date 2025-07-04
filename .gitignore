@@ -24,8 +24,14 @@ wp-content/**
 !wp-content/plugins/
 !wp-content/plugins/contact-form-7/
 !wp-content/plugins/contact-form-7/**
+
 !wp-content/plugins/customer-reviews-woocommerce/
 !wp-content/plugins/customer-reviews-woocommerce/**
+
+!wp-content/plugins/duplicate-post/
+!wp-content/plugins/duplicate-post/**
+!wp-content/plugins/elementor/
+!wp-content/plugins/elementor/**
 
 wp-content/plugins/**
 
