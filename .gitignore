@@ -21,7 +21,13 @@
 wp-content/**
 !wp-content/themes/
 !wp-content/themes/**
-!wp-content/plugins/**
+!wp-content/plugins/
+!wp-content/plugins/contact-form-7/
+!wp-content/plugins/contact-form-7/**
+!wp-content/plugins/customer-reviews-woocommerce/
+!wp-content/plugins/customer-reviews-woocommerce/**
+
+wp-content/plugins/**
 
 # Still ignore media and cache folders
 wp-content/uploads/
