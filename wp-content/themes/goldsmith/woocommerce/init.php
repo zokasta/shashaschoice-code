@@ -5042,7 +5042,7 @@ if ( ! function_exists( 'goldsmith_product_page_custom_btn' ) ) {
 
                 } elseif ( 'whatsapp' == $action ) {
 
-                    echo '<a rel="noopener noreferrer nofollow" href="'.$w_link.'" target="'.esc_html( $target ).'" class="goldsmith-btn goldsmith-btn-dark goldsmith-btn-solid goldsmith-btn-square goldsmith-btn-large">
+                    echo '<a aria-label="Share on Whatsapp" rel="noopener noreferrer nofollow" href="'.$w_link.'" target="'.esc_html( $target ).'" class="goldsmith-btn goldsmith-btn-dark goldsmith-btn-solid goldsmith-btn-square goldsmith-btn-large">
                         <i class="fab fa-whatsapp"></i>
                         <span class="whatsapp-text">'.$title.'</span>
                     </a>';

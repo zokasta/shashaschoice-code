@@ -398,7 +398,7 @@ if ( ! function_exists( 'goldsmith_header_buttons_layouts' ) ) {
                     $action_type  = goldsmith_settings( 'header_myaccount_action_type', 'panel' );
                     $account_url  = class_exists('WooCommerce') ? wc_get_page_permalink( 'myaccount' ) : '';
                     $account_url  = apply_filters('goldsmith_myaccount_page_url', $account_url );
-                    $account_link = '<a class="account-page-link" href="'.esc_url( $account_url ).'">';
+                    $account_link = '<a aria-label="My Account" class="account-page-link" href="'.esc_url( $account_url ).'">';
                     $account_data = '';
 
                     if ( class_exists( 'WooCommerce' ) && !is_account_page() ) {
@@ -407,10 +407,10 @@ if ( ! function_exists( 'goldsmith_header_buttons_layouts' ) ) {
                             $account_link  = '<a class="goldsmith-open-popup" href="#goldsmith-account-popup">';
                             $account_data  = '';
                         } elseif ( 'page' == $action_type ) {
-                            $account_link  = '<a class="account-page-link" href="'.esc_url( $account_url ).'">';
+                            $account_link  = '<a aria-label="My Account" class="account-page-link" href="'.esc_url( $account_url ).'">';
                             $account_data = '';
                         } else {
-                            $account_link = '<a class="account-page-link" href="#0">';
+                            $account_link = '<a aria-label="My Account" class="account-page-link" href="#0">';
                             $account_data = ' data-account-action="account"';
                         }
                     }
@@ -831,7 +831,7 @@ if ( ! class_exists( 'Goldsmith_Header' ) ) {
                         $action_type  = goldsmith_settings( 'header_myaccount_action_type', 'panel' );
                         $account_url  = class_exists('WooCommerce') ? wc_get_page_permalink( 'myaccount' ) : '';
                         $account_url  = apply_filters('goldsmith_myaccount_page_url', $account_url );
-                        $account_link = '<a class="account-page-link" href="'.esc_url( $account_url ).'">';
+                        $account_link = '<a aria-label="My Account" class="account-page-link" href="'.esc_url( $account_url ).'">';
                         $account_data = '';
 
                         if ( class_exists( 'WooCommerce' ) && !is_account_page() ) {
@@ -840,10 +840,10 @@ if ( ! class_exists( 'Goldsmith_Header' ) ) {
                                 $account_link  = '<a class="goldsmith-open-popup" href="#goldsmith-account-popup">';
                                 $account_data  = '';
                             } elseif ( 'page' == $action_type ) {
-                                $account_link  = '<a class="account-page-link" href="'.esc_url( $account_url ).'">';
+                                $account_link  = '<a aria-label="My Account" class="account-page-link" href="'.esc_url( $account_url ).'">';
                                 $account_data = '';
                             } else {
-                                $account_link = '<a class="account-page-link" href="#0">';
+                                $account_link = '<a aria-label="My Account" class="account-page-link" href="#0">';
                                 $account_data = ' data-account-action="account"';
                             }
                         }
@@ -888,7 +888,7 @@ if ( ! class_exists( 'Goldsmith_Header' ) ) {
                         $action_type  = goldsmith_settings( 'header_myaccount_action_type', 'panel' );
                         $account_url  = class_exists('WooCommerce') ? wc_get_page_permalink( 'myaccount' ) : '';
                         $account_url  = apply_filters('goldsmith_myaccount_page_url', $account_url );
-                        $account_link = '<a class="account-page-link" href="'.esc_url( $account_url ).'">';
+                        $account_link = '<a aria-label="My Account" class="account-page-link" href="'.esc_url( $account_url ).'">';
                         $account_data = '';
 
                         if ( class_exists( 'WooCommerce' ) && !is_account_page() ) {
@@ -896,9 +896,9 @@ if ( ! class_exists( 'Goldsmith_Header' ) ) {
                             if ( 'popup' == $action_type ) {
                                 $account_link  = '<a class="goldsmith-open-popup" href="#goldsmith-account-popup">';
                             } elseif ( 'page' == $action_type ) {
-                                $account_link  = '<a class="account-page-link" href="'.esc_url( $account_url ).'">';
+                                $account_link  = '<a aria-label="My Account" class="account-page-link" href="'.esc_url( $account_url ).'">';
                             } else {
-                                $account_link = '<a class="account-page-link" href="#0">';
+                                $account_link = '<a aria-label="My Account" class="account-page-link" href="#0">';
                                 $account_data = ' data-account-action="account"';
                             }
                         }
@@ -958,7 +958,7 @@ if ( ! class_exists( 'Goldsmith_Header' ) ) {
                         $action_type  = goldsmith_settings( 'header_myaccount_action_type', 'panel' );
                         $account_url  = class_exists('WooCommerce') ? wc_get_page_permalink( 'myaccount' ) : '';
                         $account_url  = apply_filters('goldsmith_myaccount_page_url', $account_url );
-                        $link_open    = '<a class="account-page-link" href="'.esc_url( $account_url ).'">';
+                        $link_open    = '<a aria-label="My Account" class="account-page-link" href="'.esc_url( $account_url ).'">';
                         $link_close   = '</a>';
                         $account_data = '';
 
@@ -966,7 +966,7 @@ if ( ! class_exists( 'Goldsmith_Header' ) ) {
                             if ( 'popup' == $action_type ) {
                                 $link_open  = '<a class="goldsmith-open-popup" href="#goldsmith-account-popup">';
                             } elseif ( 'page' == $action_type ) {
-                                $link_open  = '<a class="account-page-link" href="'.esc_url( $account_url ).'">';
+                                $link_open  = '<a aria-label="My Account" class="account-page-link" href="'.esc_url( $account_url ).'">';
                             } else {
                                 $link_open = '';
                                 $link_close = '';

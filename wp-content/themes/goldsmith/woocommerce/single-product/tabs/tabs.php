@@ -51,6 +51,7 @@ if ( ! empty( $product_tabs ) ) {
                 <div class="row">
                     <div class="col-12 col-xl-6">
             <?php } ?>
+            <?php echo "<script>console.log($product_tabs)</script>"; ?>
             <?php foreach ( $product_tabs as $key => $product_tab ) : ?>
                 <?php if ( !empty($product_tab['title']) ) { ?>
                     <div class="goldsmith-accordion-item">
