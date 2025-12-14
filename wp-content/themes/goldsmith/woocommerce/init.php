@@ -1348,7 +1348,7 @@ if ( ! function_exists( 'goldsmith_add_to_cart' ) ) {
             }
 
             if ( $btn_type == 'button' ) {
-                $<class .= ' goldsmith-btn goldsmith-btn-dark goldsmith-product-cart';
+                $class .= ' goldsmith-btn goldsmith-btn-dark goldsmith-product-cart';
             }
             if ( $btn_type == 'icon' ) {
                 $class .= ' goldsmith-add-to-cart-icon-link';
