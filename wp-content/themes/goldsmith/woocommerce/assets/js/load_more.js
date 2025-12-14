@@ -53,9 +53,9 @@ jQuery(document).ready(function($) {
 
             $('.goldsmith-load-more').html(more).removeClass('loading');
 
-            if ( obj.current_page == obj.max_page ) {
-                $('.goldsmith-more').remove();
-            }
+            // if ( obj.current_page == obj.max_page ) {
+            //     $('.goldsmith-more').remove();
+            // }
 
             $(document.body).trigger('goldsmith_quick_shop');
             $('body').trigger('goldsmith_quick_init');
