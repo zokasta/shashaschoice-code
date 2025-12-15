@@ -3888,7 +3888,7 @@ if ( !function_exists( 'goldsmith_shop_main_loop' ) ) {
 
 
 if ( !function_exists( 'goldsmith_shop_sidebar' ) ) {
-    add_action('goldsmith_shop_before_loop','goldsmith_shop_choosen_filters_row', 20 );
+    add_action('goldsmith_shop_before_loop','goldsmith_shop_choosen_filters_row', 99 );
     function goldsmith_shop_choosen_filters_row()
     {
         $layout = apply_filters('goldsmith_shop_layout', goldsmith_settings( 'shop_layout', 'left-sidebar' ) );
