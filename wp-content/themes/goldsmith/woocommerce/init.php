@@ -1202,8 +1202,8 @@ if ( ! function_exists( 'goldsmith_wishlist_button' ) ) {
         $text = esc_html__( 'Add to Wishlist', 'goldsmith' );
         $icon = '<svg
         class="svgCompare goldsmith-svg-icon"
-        width="20"
-        height="20"
+        width="16"
+        height="16"
         fill="currentColor"
         viewBox="0 0 16 16"
         xmlns="http://www.w3.org/2000/svg"><use href="#shopLove"></use></svg>';
