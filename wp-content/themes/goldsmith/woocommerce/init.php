@@ -1201,11 +1201,11 @@ if ( ! function_exists( 'goldsmith_wishlist_button' ) ) {
         $id   = $product->get_id();
         $text = esc_html__( 'Add to Wishlist', 'goldsmith' );
         $icon = '<svg
-        class="svgCompare goldsmith-svg-icon"
-        width="16"
-        height="16"
+        class="svgCompare goldsmith-svg-icon"svgCompare goldsmith-svg-icon
+        width="512"
+        height="512"
         fill="currentColor"
-        viewBox="0 0 16 16"
+        viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"><use href="#shopLove"></use></svg>';
 
         $type     = goldsmith_settings( 'product_action_btntype', 'icon' );
